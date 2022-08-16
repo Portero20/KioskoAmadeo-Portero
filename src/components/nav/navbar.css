@@ -1,0 +1,16 @@
+li, a{
+
+    list-style-type: none;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 20px;
+
+
+}
+
+a{
+
+    margin-left: 260px;
+    margin-top: 25px;
+
+}
