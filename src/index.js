@@ -12,7 +12,7 @@ import App from './App'  //importamos el archivo App.jsx -> export default
 
 const root = ReactDOM.createRoot(document.getElementById('root')); //le indicamos un punto de entrada (createRoot es para poder mostrarlo en el DOM)
 
-root.render(<App />); //empezamos a renderizar nuestra app
+root.render(<App />); //empezamos a renderizar nuestra app, aqui voy a mostrar toda mi app (podemos renderizar un componente)
 
 
 //<App/> es la forma de ejecutar la funcion en react, asi llamamos a las funciones

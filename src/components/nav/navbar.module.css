@@ -1,17 +1,25 @@
-li, a{
+.navEstilo,li, a{
 
     list-style-type: none;
     display: inline-block;
     text-decoration: none;
-    margin-left: 20px;
+    
+    
 
 
 }
+
 
 a{
-
-    margin-left: 260px;
     margin-top: 25px;
     font-weight: bolder;
+    color:black;
+    padding: 25px;
+    margin-bottom: -20px;
+    margin-top: -5px;
 
 }
+
+
+
+
