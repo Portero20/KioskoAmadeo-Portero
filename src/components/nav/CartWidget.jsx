@@ -4,9 +4,15 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const CartWidget = () => {
   return (
-    <span className="sizeCart">
-      <AiOutlineShoppingCart />
-    </span>
+
+    <div className="containerCarrito" style={{display:'flex',justifyContent:'flex-end'}}>
+
+      <span className="sizeCart"><AiOutlineShoppingCart /></span>
+      <span className="colorNumber">10</span>
+
+    </div>
+    
+    
   );
 };
 

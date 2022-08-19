@@ -1,12 +1,7 @@
 .navEstilo {
 
-    list-style-type: none;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0 20px;
-    color: white;
+    padding:0px 40px;
     font-weight: bolder;
-    position: relative;
     margin-top: 5px;
 
     li {
@@ -15,14 +10,12 @@
         text-decoration: none;
         display: inline-block;
         padding: 0 20px;
-        color: white;
         font-weight: bolder;
-        position: relative;
+        
         margin-top: 5px;
 
         a {
 
-            list-style-type: none;
             text-decoration: none;
             display: inline-block;
             padding: 0 20px;
@@ -37,6 +30,28 @@
 
             }
 
+            &::after {
+
+                content: '';
+                position: absolute;
+                right: 17px;
+                bottom: 0;
+                width: 70%;
+                height: 2px;
+                background-color: white;
+                transform: scaleX(0);
+                transform-origin: right;
+                transition: transform .5s;
+        
+            }
+        
+            &:hover::after {
+        
+                transform: scaleX(1);
+                transform-origin: left;
+        
+            }
+
         }
 
     }
@@ -46,31 +61,3 @@
 
 }
 
-/* Estilos con animaciones para los enlaces */
-.enlaces {
-
-
-    &::after {
-
-        content: '';
-        position: absolute;
-        right: 17px;
-        bottom: 0;
-        width: 70%;
-        height: 2px;
-        background-color: white;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform .5s;
-
-    }
-
-    &:hover::after {
-
-        transform: scaleX(1);
-        transform-origin: left;
-
-    }
-
-
-}

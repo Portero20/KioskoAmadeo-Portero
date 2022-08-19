@@ -1,5 +1,5 @@
 import React from "react"; //rafce = React Arrow Function Export Component
-import Layout from "../../Layout";
+import Layout from "../layout/Layout";
 import estilosM from "./main.module.scss"; //trabajamos con modulos, le pone un id a la clase automaticamente, con modulos evitamos que se pise
 import "animate.css";
 
