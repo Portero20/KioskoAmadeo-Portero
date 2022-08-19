@@ -19,7 +19,7 @@ const ItemListContainer = (props) => {
           <h2 style={{ fontWeight: "bolder" }} className="animate__animated animate__bounceIn">{test}</h2>
         </Layout>
 
-        <h2 style={{textAlign:'center'}}>{saludo}</h2>
+        <h2 className="centradoSaludo">{saludo}</h2>
       </section>
     </main>
   );
