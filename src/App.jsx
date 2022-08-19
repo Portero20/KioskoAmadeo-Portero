@@ -20,8 +20,7 @@ const App = () => {
             
             <Header/>
             <ItemListContainer 
-                test="Todas las variedades" 
-                describir="Creado por Exequiel Portero"
+                test="Compras y ventas minoristas" 
             />
             <Footer/>
             

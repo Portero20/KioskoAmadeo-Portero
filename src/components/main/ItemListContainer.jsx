@@ -8,7 +8,7 @@ import 'animate.css';
 const ItemListContainer = (props) => {  //props es un objeto, para acceder al valor del main es props.test mediante llaves para decirle que es js
 
 
-  const {test,describir} = props;  //creamos una constante para llamar a cada una de las propiedades
+  const {test} = props;  //creamos una constante para llamar a cada una de las propiedades
   
   
   return (
@@ -20,12 +20,6 @@ const ItemListContainer = (props) => {  //props es un objeto, para acceder al va
 
                 <Layout>
                 <h2 style={{fontWeight:'bolder'}} className="animate__animated animate__bounceIn">{test}</h2> 
-
-                </Layout>
-
-                <Layout>
-
-                <h2 style={{fontWeight:'bolder'}} className="animate__animated animate__bounceIn">{describir}</h2> 
 
                 </Layout>
                 
