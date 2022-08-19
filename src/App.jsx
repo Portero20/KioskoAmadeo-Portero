@@ -2,7 +2,7 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import ItemListContainer from "./components/main/ItemListContainer";
 
-import "./index.scss";
+import "./scss/index.scss";
 
 //podemos hacer un export de una constante, tiene un import diferente
 
