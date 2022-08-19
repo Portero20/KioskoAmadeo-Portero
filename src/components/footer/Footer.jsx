@@ -14,18 +14,18 @@ const Footer = () => {
 
   return (
     <footer className={estilos.contenedorFooter}>
-      <div class="card text-center bg-black">
-        <div class="card-header text-light">Drugstore Amadeo</div>
-        <div class="card-body">
-          <h5 class="card-title fw-bolder text-light">
+      <div className="card text-center bg-black">
+        <div className="card-header text-light">Drugstore Amadeo</div>
+        <div className="card-body">
+          <h5 className="card-title fw-bolder text-light">
             Special title treatment
           </h5>
-          <p class="card-text text-light">
+          <p className="card-text text-light">
             With supporting text below as a natural lead-in to additional
             content.
           </p>
         </div>
-        <div class="card-footer text-light">
+        <div className="card-footer text-light">
           &copy; Todos los derechos reservados
         </div>
       </div>
