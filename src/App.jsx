@@ -16,7 +16,7 @@ const App = () => {
 
     <>
       <Header />
-      <ItemListContainer test="Compras y ventas minoristas" />
+      <ItemListContainer test="Compras y ventas minoristas" saludo="Bienvenidos a mi sitio" />
       <Footer />
     </>
   );

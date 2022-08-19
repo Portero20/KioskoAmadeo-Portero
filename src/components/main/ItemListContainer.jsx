@@ -8,7 +8,7 @@ import "animate.css";
 const ItemListContainer = (props) => {
   //props es un objeto, para acceder al valor del main es props.test mediante llaves para decirle que es js
 
-  const { test } = props; //creamos una constante para llamar a cada una de las propiedades
+  const { test,saludo } = props; //creamos una constante para llamar a cada una de las propiedades
 
   return (
     <main className={estilosM.MainEstilo}>
@@ -18,6 +18,8 @@ const ItemListContainer = (props) => {
         <Layout>
           <h2 style={{ fontWeight: "bolder" }} className="animate__animated animate__bounceIn">{test}</h2>
         </Layout>
+
+        <h2 style={{textAlign='center'}}>{saludo}</h2>
       </section>
     </main>
   );
