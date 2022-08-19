@@ -1,24 +1,31 @@
 .navEstilo,li, a{
 
     list-style-type: none;
-    display: inline-block;
     text-decoration: none;
-    
-    
-
-
-}
-
-
-a{
-    margin-top: 25px;
+    display: inline-block;
+    padding: 0 20px;
+    color: white;
     font-weight: bolder;
-    color:black;
-    padding: 25px;
-    margin-bottom: -20px;
-    margin-top: -5px;
+    position: relative;
+    margin-top: 5px;
+    
+    
+}
+
+
+
+a:hover{
+
+    color:white;
 
 }
+
+
+
+
+
+
+
 
 
 

@@ -1,8 +1,9 @@
 import estilos from './footer.module.css'  //trabajamos con modulos, le pone un id a la clase automaticamente, con modulos evitamos que se pise
 
+
 const styles = {
 
-    parrafo:{
+    parrafo: {
 
         color: 'orange',
         textAlign: 'center',
@@ -13,16 +14,24 @@ const styles = {
 
 }
 
-const Footer = () =>{  //podemos agregar estilos en linea pero hay que utilizar camelCase
+const Footer = () => {  //podemos agregar estilos en linea pero hay que utilizar camelCase
 
-    return(
+    return (
 
-        <footer className= {estilos.contenedorFooter}>
+        <footer className={estilos.contenedorFooter}>
 
-            <h5 style={{textAlign:'center'}}>Portero Daniel Exequiel</h5>
-
-
-            <p style={styles.parrafo}>Tenemos todos los productos</p>
+            <div class="card text-center bg-black">
+                <div class="card-header text-light">
+                    Drugstore Amadeo
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder text-light">Special title treatment</h5>
+                    <p class="card-text text-light">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer text-light">
+                    &copy; Todos los derechos reservados
+                </div>
+            </div>
 
         </footer>
 

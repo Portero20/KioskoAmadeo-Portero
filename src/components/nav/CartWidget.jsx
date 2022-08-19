@@ -1,15 +1,13 @@
 import React from 'react'
 import './cart.css'
+import {AiOutlineShoppingCart} from 'react-icons/ai'
 
 const CartWidget = () => {
   return (
 
-    
-        
-    <span className="material-icons">shopping_cart</span>
+    <span className='sizeCart'><AiOutlineShoppingCart/></span>
 
-    
-    
+
   )
 }
 

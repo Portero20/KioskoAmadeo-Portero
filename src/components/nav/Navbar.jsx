@@ -9,20 +9,21 @@ const Navbar = () => {
                 
                 <ul>
                     
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#" className='enlaces'>Productos</a></li>
+                    <li><a href="#" className='enlaces'>Nosotros</a></li>
+                    <li><a href="#" className='enlaces'>Contacto</a></li>
+                    <CartWidget/>
                     
                     
                     
 
                 </ul>
                 
-                <div className='carrito'>
+                
 
-                  <CartWidget/>
+                  
 
-                </div>
+                
 
                 
                 

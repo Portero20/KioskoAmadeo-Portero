@@ -1,12 +1,10 @@
-.carrito{
+.sizeCart{
 
-    display: flex;
-    justify-content: flex-end;
-    margin-right: -480px;
-    margin-top: -30px;
-    
+    font-size: 25px;
 
 }
+
+
 
 
 

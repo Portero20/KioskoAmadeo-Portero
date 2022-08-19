@@ -1,15 +1,13 @@
 .HeaderEstilo{
 
-    background-color: grey;
-
-}
-
-header{
-
+    background-color: #071013;
     display: flex;
-    justify-content: center;
-    padding: 20px;
-    margin-top: -20px;
-
+    flex-direction: row-reverse;
+    
+    
+    
 
 }
+
+
+
