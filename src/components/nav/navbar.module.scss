@@ -1,0 +1,47 @@
+.navEstilo {
+
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 20px;
+    color: white;
+    font-weight: bolder;
+    position: relative;
+    margin-top: 5px;
+
+    li {
+
+        list-style-type: none;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 20px;
+        color: white;
+        font-weight: bolder;
+        position: relative;
+        margin-top: 5px;
+
+        a {
+
+            list-style-type: none;
+            text-decoration: none;
+            display: inline-block;
+            padding: 0 20px;
+            color: white;
+            font-weight: bolder;
+            position: relative;
+            margin-top: 5px;
+
+            &:hover{
+
+                color: white;
+
+            }
+
+        }
+
+    }
+
+
+
+
+}

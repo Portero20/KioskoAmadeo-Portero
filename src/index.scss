@@ -1,0 +1,49 @@
+/* Import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+/* Reseteo */
+* {
+
+    padding: 0;
+    margin: 0;
+
+
+}
+
+/* Font family para todo el body */
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+/* Estilos con animaciones para los enlaces */
+.enlaces {
+
+
+    &::after {
+
+        content: '';
+        position: absolute;
+        right: 17px;
+        bottom: 0;
+        width: 70%;
+        height: 2px;
+        background-color: white;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .5s;
+
+    }
+
+    &:hover::after {
+
+        transform: scaleX(1);
+        transform-origin: left;
+
+    }
+
+
+}
