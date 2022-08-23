@@ -1,6 +1,7 @@
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import ItemListContainer from "./components/main/ItemListContainer";
+import ItemCounter from "./components/counter/ItemCounter";
 
 import "./scss/index.scss";
 
@@ -11,12 +12,19 @@ import "./scss/index.scss";
 //a Main le pasamos una clave-valor, lo que pasamos va a estar en llaves pero un string va en comillas, componente padre le pasa una propiedad a componente hijo
 
 const App = () => {
+
+  const saludar = (param) =>{
+
+    console.log(param);
+
+  }
+
   return (
     //JSX solo debe retornar un solo elemento, no es lo ideal tener muchas etiquetas dentro porque con react creamos componentes
 
     <>
       <Header />
-      <ItemListContainer test="Compras y ventas minoristas"/>
+      <ItemListContainer test="Compras y ventas minoristas" saludar={saludar}/>
       <Footer />
     </>
   );
