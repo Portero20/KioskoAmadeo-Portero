@@ -57,7 +57,7 @@ const CardCliente = () => {
 
                             <h5 className="mb-0">Matt Damon</h5>
                             <span>Cliente</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Excelente atención y variedad de productos, lo único que podría agregar es que seria bueno que implementen el sistema de carga de SUBE.</p>
 
                         </div>
 
@@ -88,7 +88,7 @@ const CardCliente = () => {
 
                             <h5 className="mb-0">Leonardo DiCaprio</h5>
                             <span>Cliente</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Excelente atención y variedad de productos, lo único que podría agregar es que seria bueno que implementen el sistema de carga de SUBE.</p>
 
                         </div>
 
