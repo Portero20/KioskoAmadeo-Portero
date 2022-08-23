@@ -1,4 +1,6 @@
 import estilos from "./footer.module.scss"; //trabajamos con modulos, le pone un id a la clase automaticamente, con modulos evitamos que se pise
+import './iconos.scss'
+
 
 const styles = {
   parrafo: {
@@ -20,10 +22,12 @@ const Footer = () => {
           <h5 className="card-title fw-bolder text-light">
             Special title treatment
           </h5>
-          <p className="card-text text-light">
-            With supporting text below as a natural lead-in to additional
-            content.
-          </p>
+          <ul className="enla">
+              <li><a href="#"><i className="fab fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i className="fab fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i className="fab fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i className="fab fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
         </div>
         <div className="card-footer text-light">
           &copy; Todos los derechos reservados

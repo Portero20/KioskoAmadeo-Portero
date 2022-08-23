@@ -12,10 +12,19 @@ import App from './App'  //importamos el archivo App.jsx -> export default
 
 const root = ReactDOM.createRoot(document.getElementById('root')); //le indicamos un punto de entrada (createRoot es para poder mostrarlo en el DOM)
 
-root.render(<App />); //empezamos a renderizar nuestra app, aqui voy a mostrar toda mi app (podemos renderizar un componente)
+root.render(  //empezamos a renderizar nuestra app, aqui voy a mostrar toda mi app (podemos renderizar un componente)
+
+    <React.StrictMode>
+
+        <App />
+
+    </React.StrictMode>
+
+); 
 
 
 //<App/> es la forma de ejecutar la funcion en react, asi llamamos a las funciones
 //App() ponerlo de esta forma no es la que recomienda react porque va a tirar un warning porque no es react
 
+//React.StrictMode hace un doble chequeo
 

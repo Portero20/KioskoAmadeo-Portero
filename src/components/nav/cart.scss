@@ -1,18 +1,22 @@
-.containerCarrito{
-
-  margin-top: -32px;
-  margin-right: -20px;
-
+//Estilos para el carrito
+.containerCarrito {
+    
+    width: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   .sizeCart {
     font-size: 25px;
     color: white;
   }
 
-  .colorNumber{
+  .colorNumber {
 
     color: white;
+    font-weight: bolder;
+    
+    
 
   }
-  
 
 }

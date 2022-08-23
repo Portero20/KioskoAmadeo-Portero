@@ -1,0 +1,114 @@
+import React from 'react'
+import './cardsClientes.scss'
+import clint from '../../img/clinteastwood.jpg'
+import matt from '../../img/mattdamon.jpg'
+import diCaprio from '../../img/dicaprio.webp'
+
+const CardCliente = () => {
+    return (
+        <div className="container mt-5 mb-5 contenedorCliente">
+
+            <div>
+
+                <h2 style={{fontWeight:'bolder',marginBottom:'60px'}}>Nuestros clientes</h2>
+
+            </div>
+
+            <div className="row g-2 tarjetasContainer">
+                <div className="col-md-4">
+                    <div className="tarj p-3 text-center px-4">
+
+                        <div className="user-image">
+
+                            <img src={clint} className="rounded-circle" width="80"/>
+
+                        </div>
+
+                        <div className="user-content">
+
+                            <h5 className="mb-0">Clint Eastwood</h5>
+                            <span>Software Developer</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                        </div>
+
+                        <div className="ratings">
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className="col-md-4">
+
+                    <div className="tarj p-3 text-center px-4">
+
+                        <div className="user-image">
+
+                            <img src={matt} className="rounded-circle" width="80"/>
+
+                        </div>
+
+                        <div className="user-content">
+
+                            <h5 className="mb-0">Mark Smith</h5>
+                            <span>Web Developer</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                        </div>
+
+                        <div className="ratings">
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className="col-md-4">
+
+                    <div className="tarj p-3 text-center px-4">
+
+                        <div className="user-image">
+
+                            <img src={diCaprio} className="rounded-circle" width="80"/>
+
+                        </div>
+
+                        <div className="user-content">
+
+                            <h5 className="mb-0">Veera  Duncan</h5>
+                            <span>Software Architect</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                        </div>
+
+                        <div className="ratings">
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    )
+}
+
+export default CardCliente
