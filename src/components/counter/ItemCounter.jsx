@@ -1,18 +1,18 @@
 import React, {useState} from 'react'
 
-const ItemCounter = () => {
+const ItemCounter = ({stock,initial,onAdd}) => {
 
-    const [count,setCount] = useState(0) //lee mi estado y ve que el valor inicial es 0
+    const [count,setCount] = useState(initial) //lee mi estado y ve que el valor inicial es 1
 
     const sumar = () =>{
 
-        if(count < tope) {   //si count es menor al tope le sumaremos 1
+        if(count < stock) {   //si count es menor al tope le sumaremos 1
             
             setCount(count+1)  //lo suma
 
         } else {
             
-            alert("Alcanzo el tope")
+            alert("Máximo de stock")
 
         }
 
@@ -20,17 +20,17 @@ const ItemCounter = () => {
 
     }
 
-    let tope = 10;   //queremos que el contador llegue a 10
 
     const restar = () => {
 
-        if (count > 0) {
+
+        if (count > 1) {  // si count es mayor le resta 1
             
             setCount(count-1) //lo resta
 
         } else {
 
-            alert("No existen valores negativos")
+            alert("No se puede agregar 0 productos")
             
         }
 
@@ -39,10 +39,10 @@ const ItemCounter = () => {
   return (
     <div>
 
-           <button onClick={sumar}>+</button>
-           <button onClick={restar}>-</button>
-           <p style={{fontWeight:'bolder'}}>Count: {count}</p> 
-           <button disabled={count === 0}>Agregar al carrito</button>
+        <button style={{width:'30px', margin:'0 10px 0 2px', fontWeight:'bolder'}} onClick={sumar}>+</button>
+        <button style={{width:'30px',fontWeight:'bolder'}} onClick={restar}>-</button>
+        <p style={{fontWeight:'bolder'}}>Count:{count}</p> 
+        <button onClick={onAdd}>Agregar al carrito</button>
 
     </div>
   )

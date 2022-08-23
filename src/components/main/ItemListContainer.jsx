@@ -5,26 +5,20 @@ import "animate.css";
 import Cards from "../cards/Cards";
 import CardCliente from "../cards/CardCliente";
 import ItemCounter from "../counter/ItemCounter";
-import Texto from "../Texto";
 
 
 //con react las clases las ponemos con: className y funciona igual que una class
 
 const ItemListContainer = (props) => { //props es un objeto, para acceder al valor del main es props.test mediante llaves para decirle que es js
 
+  
+  const {test} = props; //creamos una constante para llamar a cada una de las propiedades
 
-  const otraFuncion = (param) =>{
+  const onAdd = () =>{
 
-    console.log(param);
+    alert("Agregado al carrito");
 
   }
-
-
-
-
-  
-  const {test,saludar} = props; //creamos una constante para llamar a cada una de las propiedades
-
 
 
   return (
@@ -36,15 +30,7 @@ const ItemListContainer = (props) => { //props es un objeto, para acceder al val
           <h2 style={{ fontWeight: "bolder", color:'black' }} className="animate__animated animate__bounceIn">{test}</h2>
         </Layout>
 
-        <h2 onClick={() => otraFuncion('parametro')}>
-
-        Bienvenidos {saludar}
-          
-        </h2>
-
-        <ItemCounter/>
-
-        <Texto/>
+        <ItemCounter stock={10} initial={1} onAdd={onAdd} />
 
         <Cards/>
 

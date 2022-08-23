@@ -27,8 +27,8 @@ const CardCliente = () => {
                         <div className="user-content">
 
                             <h5 className="mb-0">Clint Eastwood</h5>
-                            <span>Software Developer</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <span>Cliente</span>
+                            <p>Excelente atención y variedad de productos, lo único que podría agregar es que seria bueno que implementen el sistema de carga de SUBE.</p>
 
                         </div>
 
@@ -55,8 +55,8 @@ const CardCliente = () => {
 
                         <div className="user-content">
 
-                            <h5 className="mb-0">Mark Smith</h5>
-                            <span>Web Developer</span>
+                            <h5 className="mb-0">Matt Damon</h5>
+                            <span>Cliente</span>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
                         </div>
@@ -86,8 +86,8 @@ const CardCliente = () => {
 
                         <div className="user-content">
 
-                            <h5 className="mb-0">Veera  Duncan</h5>
-                            <span>Software Architect</span>
+                            <h5 className="mb-0">Leonardo DiCaprio</h5>
+                            <span>Cliente</span>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
                         </div>

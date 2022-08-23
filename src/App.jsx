@@ -1,7 +1,7 @@
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import ItemListContainer from "./components/main/ItemListContainer";
-import ItemCounter from "./components/counter/ItemCounter";
+
 
 import "./scss/index.scss";
 
@@ -13,18 +13,12 @@ import "./scss/index.scss";
 
 const App = () => {
 
-  const saludar = (param) =>{
-
-    console.log(param);
-
-  }
-
   return (
     //JSX solo debe retornar un solo elemento, no es lo ideal tener muchas etiquetas dentro porque con react creamos componentes
 
     <>
       <Header />
-      <ItemListContainer test="Compras y ventas minoristas" saludar={saludar}/>
+      <ItemListContainer test="Compras y ventas minoristas"/>
       <Footer />
     </>
   );

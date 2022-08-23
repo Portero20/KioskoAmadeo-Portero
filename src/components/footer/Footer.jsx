@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <footer className={estilos.contenedorFooter}>
-      <div className="card text-center bg-black">
+      <div style={{backgroundColor:'#343a40'}} className="card text-center">
         <div className="card-header text-light">Drugstore Amadeo</div>
         <div className="card-body">
           <h5 className="card-title fw-bolder text-light">

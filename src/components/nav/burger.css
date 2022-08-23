@@ -40,7 +40,7 @@
 }
 
 
-/* State when the navbar is collapsed */
+/* Funciona cuando aprieta el menu */
 
 .navbar-toggler.collapsed .top-bar {
     position: absolute;
