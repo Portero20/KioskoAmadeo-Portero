@@ -8,7 +8,7 @@ const ItemCounter = ({stock,initial,onAdd}) => {
 
         if(count < stock) {   //si count es menor al tope le sumaremos 1, cuando llegue al tope del stock ya no me va a dejar sumar
             
-            setCount(count+1)  //lo suma
+            setCount(count+initial)  //lo suma
 
         } else {
             
@@ -24,9 +24,9 @@ const ItemCounter = ({stock,initial,onAdd}) => {
     const restar = () => {
 
 
-        if (count > 1) {  // si count es mayor le resta 1
+        if (count > initial) {  // si count es mayor le resta 1
             
-            setCount(count-1) //lo resta
+            setCount(count-initial) //lo resta
 
         } else {
 
