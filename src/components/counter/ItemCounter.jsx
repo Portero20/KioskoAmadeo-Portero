@@ -6,13 +6,13 @@ const ItemCounter = ({stock,initial,onAdd}) => {
 
     const sumar = () =>{
 
-        if(count < stock) {   //si count es menor al tope le sumaremos 1
+        if(count < stock) {   //si count es menor al tope le sumaremos 1, cuando llegue al tope del stock ya no me va a dejar sumar
             
             setCount(count+1)  //lo suma
 
         } else {
             
-            alert("Máximo de stock")
+            alert("Máximo de stock") //si no saltara este mensaje
 
         }
 
