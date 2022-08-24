@@ -42,7 +42,7 @@ const ItemCounter = ({stock,initial,onAdd}) => {
         <button style={{width:'30px', margin:'0 10px 0 2px', fontWeight:'bolder'}} onClick={sumar}>+</button>
         <button style={{width:'30px',fontWeight:'bolder'}} onClick={restar}>-</button>
         <p style={{fontWeight:'bolder'}}>Count:{count}</p> 
-        <button onClick={onAdd}>Agregar al carrito</button>
+        <button style={{fontWeight:'bolder'}} onClick={onAdd}>Agregar al carrito</button>
 
     </div>
   )
