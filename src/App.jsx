@@ -9,7 +9,7 @@ import "./scss/index.scss";
 
 //export const App = () => "Hola mundo"  // los componentes inician con la letra inicial en Mayuscula
 
-//a Main le pasamos una clave-valor, lo que pasamos va a estar en llaves pero un string va en comillas, componente padre le pasa una propiedad a componente hijo
+//a ItemListContainer le pasamos una clave-valor, lo que pasamos va a estar en llaves pero un string va en comillas, componente padre le pasa una propiedad a componente hijo
 
 const App = () => {
 

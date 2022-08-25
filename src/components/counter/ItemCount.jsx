@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const ItemCounter = ({stock,initial,onAdd}) => {
+const ItemCount = ({stock,initial,onAdd}) => {
 
     const [count,setCount] = useState(initial) //lee mi estado y ve que el valor inicial es 1
 
@@ -48,4 +48,4 @@ const ItemCounter = ({stock,initial,onAdd}) => {
   )
 }
 
-export default ItemCounter
+export default ItemCount
