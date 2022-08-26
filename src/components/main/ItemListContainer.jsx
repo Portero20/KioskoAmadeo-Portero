@@ -17,7 +17,7 @@ const ItemListContainer = ({test}) => { //test es un objeto, para acceder al val
 
   //Practica, el 99% de los casos las promesas no las estaremos haciendo a mano porque eso depende de la API si esta bien o mal
 
-  const [productos,setProductos] = useState([]) //le ponemos llaves porque va a ser un array
+  const [productos,setProductos] = useState([]) //le ponemos corchetes porque nos va a llegar un array
 
   useEffect(() => {
 
@@ -34,13 +34,13 @@ const ItemListContainer = ({test}) => { //test es un objeto, para acceder al val
     getProducts
     .then((response) => { //en los parentesis cae la resolucion de la promesa
   
-      setProductos(response);  //guardamos en mi estado items la data que me llega,setProductos actualiza mi estado cuando me llega la data
+      setProductos(response);  //guardamos en mi estado products el response que me llega,setProductos actualiza mi estado cuando me llega la data
   
   
     })  
     .catch((err) =>{
   
-      console.log(err);   //salio todo mal
+      console.error(err);   //salio todo mal
       
     })
     .finally(() =>{
@@ -70,7 +70,6 @@ const ItemListContainer = ({test}) => { //test es un objeto, para acceder al val
           <h2 style={{ fontWeight: "bolder", color:'black' }} className="animate__animated animate__bounceIn">{test}</h2>
         </Layout>
 
-        <ItemCount stock={10} initial={1} onAdd={onAdd} />
 
         <Cards/>
 

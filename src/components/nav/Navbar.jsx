@@ -21,7 +21,8 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav d-flex justify-content-end w-100 navigator">
-            <a className="nav-link active text-light fw-bold link" aria-current="page" href="#">Bebidas</a>
+          <a className="nav-link active text-light fw-bold link" href="#">Tienda</a>
+            <a className="nav-link active text-light fw-bold link" href="#">Bebidas</a>
             <a className="nav-link active text-light fw-bold link" href="#">Golosinas</a>
             <a className="nav-link active text-light fw-bold link" href="#">Variedad</a>
             

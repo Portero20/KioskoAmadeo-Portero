@@ -8,7 +8,7 @@ const CardCliente = () => {
     return (
         <div className="container mt-5 mb-5 contenedorCliente">
 
-            <div>
+            <div> 
 
                 <h2 style={{fontWeight:'bolder',marginBottom:'60px'}}>Nuestros clientes</h2>
 
