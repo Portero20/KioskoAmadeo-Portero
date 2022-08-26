@@ -34,7 +34,7 @@ const ItemListContainer = ({test}) => { //test es un objeto, para acceder al val
     getProducts
     .then((response) => { //en los parentesis cae la resolucion de la promesa
   
-      setProductos(response );  //salio todo bien
+      setProductos(response);  //guardamos en mi estado items la data que me llega,setProductos actualiza mi estado cuando me llega la data
   
   
     })  
