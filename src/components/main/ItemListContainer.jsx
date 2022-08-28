@@ -4,7 +4,6 @@ import estilosM from "./main.module.scss"; //trabajamos con modulos, le pone un 
 import "animate.css";
 import Cards from "../cards/Cards";
 import CardCliente from "../cards/CardCliente";
-import ItemCount from "../counter/ItemCount";
 import { products } from "../mock/productos";
 import '../items/items.scss'
 import ItemList from "../items/ItemList";
@@ -25,7 +24,7 @@ const ItemListContainer = ({test}) => { //test es un objeto, para acceder al val
 
       setTimeout(() => {
         
-        res(products) //esta respuesta va a caer en el then
+        res(products) //esta respuesta va a caer en el then, por lo tanto me va a mostrar mi array
         
       }, 2000);
   
@@ -53,7 +52,6 @@ const ItemListContainer = ({test}) => { //test es un objeto, para acceder al val
   },[])
 
   
-
   const onAdd = () =>{
 
     alert("Agregado al carrito");
