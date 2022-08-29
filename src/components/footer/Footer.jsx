@@ -1,3 +1,4 @@
+import React from 'react'
 import estilos from "./footer.module.scss"; //trabajamos con modulos, le pone un id a la clase automaticamente, con modulos evitamos que se pise
 import './iconos.scss'
 
