@@ -49,7 +49,7 @@ const ItemListContainer = ({test}) => { //test es un objeto, para acceder al val
     })
 
 
-  },[])
+  },[]) // el [] es para que lo haga una sola vez
 
   
   const onAdd = () =>{
@@ -72,8 +72,6 @@ const ItemListContainer = ({test}) => { //test es un objeto, para acceder al val
         <Cards/>
 
         <CardCliente/>
-
-        <ItemList estado={productos}/>
 
       </section>
     </main>
