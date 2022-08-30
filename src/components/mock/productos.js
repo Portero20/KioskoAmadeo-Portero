@@ -25,3 +25,15 @@ export const products = [
     },
 ];
 
+
+export const productOne = {
+
+    id: 3,
+    title: "Lenguetazo",
+    description: "Es un lenguetazo",
+    price: 50,
+    stock: 10,
+    category: "Golosinas",
+    img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1661386941/lenguetazo_leuvxb.png"
+
+}

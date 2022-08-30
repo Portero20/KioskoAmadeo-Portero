@@ -7,6 +7,7 @@ import CardCliente from "../cards/CardCliente";
 import { products } from "../mock/productos";
 import '../items/items.scss'
 import ItemList from "../items/ItemList";
+import ItemDetailContainer from "../items/ItemDetailContainer";
 
 
 //con react las clases las ponemos con: className y funciona igual que una class
@@ -52,11 +53,6 @@ const ItemListContainer = ({test}) => { //test es un objeto, para acceder al val
   },[]) // el [] es para que lo haga una sola vez
 
   
-  const onAdd = () =>{
-
-    alert("Agregado al carrito");
-
-  }
 
 
   return (
@@ -72,6 +68,8 @@ const ItemListContainer = ({test}) => { //test es un objeto, para acceder al val
         <Cards/>
 
         <CardCliente/>
+
+        <ItemDetailContainer/>
 
       </section>
     </main>

@@ -1,8 +1,57 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
+import Spinner from 'react-bootstrap/Spinner';
+import ItemDetail from './ItemDetail'
+import { productOne } from '../mock/productos'
 
 const ItemDetailContainer = () => {
+
+  const [product,setProduct] = useState({})
+  const [isLoading, setLoading] = useState(true) //para el loading y lo inicializamos con un valor booleano
+
+
+  useEffect(() => {
+
+    const obtenerProducts = new Promise((res,rej) => {
+
+      setTimeout(() => {
+
+        res(productOne);
+        
+      }, 3000);
+
+    })
+    obtenerProducts
+    .then((response) => {
+
+      setProduct(response)
+
+    })
+    .catch((error) =>{
+
+      console.error(error);
+
+    })
+    .finally(() => {
+
+      setLoading(false)
+
+    })
+
+
+  },[])
+
+
   return (
-    <div>ItemDetailContainer</div>
+    
+    <div>
+
+      {
+        isLoading ? <Spinner animation="border" role="status"> 
+        <span className="visually-hidden">Loading...</span>
+        </Spinner> : <ItemDetail product={product} key={product.id} />
+      }
+      
+    </div>
   )
 }
 
