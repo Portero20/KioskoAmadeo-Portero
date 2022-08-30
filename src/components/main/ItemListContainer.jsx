@@ -6,7 +6,6 @@ import Cards from "../cards/Cards";
 import CardCliente from "../cards/CardCliente";
 import { products } from "../mock/productos";
 import '../items/items.scss'
-import ItemList from "../items/ItemList";
 import ItemDetailContainer from "../items/ItemDetailContainer";
 
 
