@@ -13,7 +13,7 @@ const ItemDetailContainer = () => {
 
     const obtenerProducts = new Promise((res,rej) => {
 
-      const unicoProducto = products.find((prod) => prod.id === 2);  //me encuentra el producto por el id en este caso 2
+      const unicoProducto = products.find((prod) => prod.id === 3);  //me encuentra el producto por el id en este caso 2
 
       setTimeout(() => {
 

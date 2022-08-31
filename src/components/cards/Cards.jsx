@@ -1,8 +1,8 @@
 import React from 'react'
 import './cards.scss'
-import imagenBebidas from '../../img/bebidas.png'
+import imagenBebidas from '../../img/bebidas-gaseosas.png'
 import imagenGolosinas from '../../img/golosinas.png'
-import imagenVariedad from '../../img/variedad.png'
+import imagenVariedad from '../../img/varios.png'
 import "animate.css";
 
 
@@ -25,7 +25,7 @@ const Cards = () => {
 
       <div className="tarjeta animate__animated animate__bounceIn">
 
-        <h2><img src={imagenVariedad} alt="" className='imagenEstilo imagenVariedad'/>Variedad</h2>
+        <h2><img src={imagenVariedad} alt="" className='imagenEstilo imagenVariedad'/>Varios</h2>
 
       </div>
 

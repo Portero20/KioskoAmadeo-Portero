@@ -24,7 +24,7 @@ const Navbar = () => {
           <a className="nav-link active text-light fw-bold link" href="#">Tienda</a>
             <a className="nav-link active text-light fw-bold link" href="#">Bebidas</a>
             <a className="nav-link active text-light fw-bold link" href="#">Golosinas</a>
-            <a className="nav-link active text-light fw-bold link" href="#">Variedad</a>
+            <a className="nav-link active text-light fw-bold link" href="#">Varios</a>
             
           </div>
           <CartWidget/>
