@@ -63,7 +63,6 @@ const ItemListContainer = ({test}) => { //test es un objeto, para acceder al val
           <h2 style={{ fontWeight: "bolder", color:'black' }} className="animate__animated animate__bounceIn">{test}</h2>
         </Layout>
 
-
         <Cards/>
 
         <CardCliente/>

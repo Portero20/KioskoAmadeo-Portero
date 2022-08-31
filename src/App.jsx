@@ -1,6 +1,7 @@
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import ItemListContainer from "./components/main/ItemListContainer";
+import {BrowserRouter} from 'react-router-dom';
 
 
 import "./scss/index.scss";
@@ -18,7 +19,7 @@ const App = () => {
 
     <>
       <Header />
-      <ItemListContainer test="Compras y ventas minoristas"/>
+      <ItemListContainer test={"Ventas mayoristas y minoristas"} />
       <Footer />
     </>
   );
