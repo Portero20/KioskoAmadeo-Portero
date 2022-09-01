@@ -7,7 +7,7 @@ const ItemList = ({estado}) => {
     <div>
         <div>
 
-          <h2>Precios de los productos</h2>
+          <h2 style={{fontWeight:'bolder'}}>Productos</h2>
           {
 
             estado.map((produ) => { //recibe un callback (el resultado de cada iteraccion voy a recorrer un producto)

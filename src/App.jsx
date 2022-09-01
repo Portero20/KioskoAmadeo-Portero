@@ -1,27 +1,25 @@
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import ItemListContainer from "./components/main/ItemListContainer";
 import {BrowserRouter} from 'react-router-dom';
-
-
 import "./scss/index.scss";
+import Main from "./components/main/Main";
 
 //podemos hacer un export de una constante, tiene un import diferente
 
 //export const App = () => "Hola mundo"  // los componentes inician con la letra inicial en Mayuscula
 
-//a ItemListContainer le pasamos una clave-valor, lo que pasamos va a estar en llaves pero un string va en comillas, componente padre le pasa una propiedad a componente hijo
+//a Main le pasamos una clave-valor, lo que pasamos va a estar en llaves pero un string va en comillas, componente padre le pasa una propiedad a componente hijo
 
 const App = () => {
 
   return (
     //JSX solo debe retornar un solo elemento, no es lo ideal tener muchas etiquetas dentro porque con react creamos componentes
 
-    <>
+    <BrowserRouter>
       <Header />
-      <ItemListContainer test={"Ventas mayoristas y minoristas"} />
+      <Main/>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 };
 

@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="card-header text-light">Drugstore Amadeo</div>
         <div className="card-body">
           <h5 className="card-title fw-bolder text-light">
-            Special title treatment
+            Hecho por: Exequiel Portero
           </h5>
           <ul className="enla">
               <li><a href="#"><i className="fab fa-facebook" aria-hidden="true"></i></a></li>

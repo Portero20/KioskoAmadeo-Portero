@@ -5,7 +5,6 @@ const Layout = (props) => {  //llamamos mediante props.children para que me los 
 
     return <div style={{fontSize:'20px'}}>{props.children}</div>
     
-    
   
 }
 
