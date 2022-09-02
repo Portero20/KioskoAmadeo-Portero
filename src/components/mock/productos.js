@@ -29,7 +29,7 @@ export const products = [
     {
         id: 4,
         title: "Aguila Brownie",
-        price: 100,
+        price: 180,
         stock: 10,
         description: "Alfajor mini torta brownie con dulce de leche.",
         category: "Golosinas",
@@ -38,7 +38,7 @@ export const products = [
     {
         id: 5,
         title: "Mogul Ositos",
-        price: 100,
+        price: 80,
         stock: 10,
         description: "Mogul Gomitas Jelly Buttons.",
         category: "Golosinas",
@@ -47,7 +47,7 @@ export const products = [
     {
         id: 6,
         title: "Caja Feeling",
-        price: 100,
+        price: 1300,
         stock: 10,
         description: "Cubanito de cereal bañado en chocolate relleno con la más deliciosa crema de marroc.",
         category: "Golosinas",
@@ -56,7 +56,7 @@ export const products = [
     {
         id: 7,
         title: "Tita",
-        price: 100,
+        price: 80,
         stock: 10,
         description: "Sandwich de galletita bañado en chocolate con relleno sabor limón.",
         category: "Golosinas",
@@ -74,7 +74,7 @@ export const products = [
     {
         id: 9,
         title: "Sugus Confitados",
-        price: 100,
+        price: 150,
         stock: 10,
         description: "Caramelos confitados hechos a base de frutas.",
         category: "Golosinas",
@@ -83,7 +83,7 @@ export const products = [
     {
         id: 10,
         title: "Pico Dulce",
-        price: 100,
+        price: 1200,
         stock: 10,
         description: "Caramelo duro sabor frutal sabor tutti frutti.",
         category: "Golosinas",
@@ -94,7 +94,7 @@ export const products = [
         title: "Paso de los Toros",
         price: 150,
         stock: 10,
-        description: "Gaseosa sabor pomelo que combina el sabor intenso del pomelo con el nivel de acidez justo para sacarnos la sed .",
+        description: "Gaseosa sabor pomelo que combina el sabor intenso del pomelo con el nivel de acidez justo.",
         category: "Bebidas",
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1661983996/pasodelostoros-removebg-preview_r5vwev.png",
     },
@@ -164,7 +164,7 @@ export const products = [
     {
         id: 19,
         title: "Levite Pomelo",
-        price: 120,
+        price: 300,
         stock: 10,
         description: "Con vitaminas B9 Y B12, cero azúcar, fresca y liviana.",
         category: "Bebidas",
@@ -173,7 +173,7 @@ export const products = [
     {
         id: 20,
         title: "Sprite",
-        price: 120,
+        price: 200,
         stock: 10,
         description: "Gaseosa hecha a base de agua carbonatada con sabor a lima limón y sin cafeína.",
         category: "Bebidas",
@@ -209,7 +209,7 @@ export const products = [
     {
         id: 24,
         title: "Dulce de leche",
-        price: 650,
+        price: 450,
         stock: 10,
         description: "Dulce de leche La Serenisima de color claro, cuerpo cremoso y sabor suave.",
         category: "Varios",
@@ -218,7 +218,7 @@ export const products = [
     {
         id: 25,
         title: "Caldo Knorr",
-        price: 650,
+        price: 300,
         stock: 10,
         description: "Caldo de gallina que contiene Laurel, Perejil, Cebolla,Pimienta Negra, Cúrcuma y Tomillo.",
         category: "Varios",
@@ -227,7 +227,7 @@ export const products = [
     {
         id: 26,
         title: "Queso rallado",
-        price: 650,
+        price: 250,
         stock: 10,
         description: "Queso Reggianito de grana fina de sabor intenso.",
         category: "Varios",
@@ -236,7 +236,7 @@ export const products = [
     {
         id: 27,
         title: "Salsa Pomarola",
-        price: 650,
+        price: 200,
         stock: 10,
         description: "Salsa pomarola La Campagonla de tomate sin gluten, sin conservantes y sin TACC.",
         category: "Varios",
@@ -245,7 +245,7 @@ export const products = [
     {
         id: 28,
         title: "Yerba Amanda",
-        price: 650,
+        price: 450,
         stock: 10,
         description: "Compuesta con Peperina, Poleo, Incayuyo, Tilo, Boldo, Menta y Cedrón.",
         category: "Varios",
@@ -254,7 +254,7 @@ export const products = [
     {
         id: 29,
         title: "Azúcar Ledesma",
-        price: 650,
+        price: 300,
         stock: 10,
         description: "Azúcar que posee un alto grado de pureza .",
         category: "Varios",
@@ -263,7 +263,7 @@ export const products = [
     {
         id: 30,
         title: "Pan Lactal",
-        price: 650,
+        price: 400,
         stock: 10,
         description: "Pan lactal de 500g con manteca y leche.",
         category: "Varios",

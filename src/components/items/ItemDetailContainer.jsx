@@ -22,7 +22,7 @@ const ItemDetailContainer = () => {
 
         const unicoProducto = products.find((prod) => prod.id === idProdNumerico);  //me encuentra el producto por el id en este caso idProdNumerico
 
-        res(idProdNumerico ? unicoProducto : products)
+        res(idProdNumerico ? unicoProducto : products) //utilizamos operador ternario para que el código no sea largo
         
       }, 2000);
 

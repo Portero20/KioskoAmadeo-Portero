@@ -8,7 +8,7 @@ const CartWidget = () => {
     <div className="containerCarrito">
 
       <span className="sizeCart"><AiOutlineShoppingCart /></span>
-      <span className="colorNumber">10</span>
+      <span className="colorNumber">0</span>
 
     </div>
     

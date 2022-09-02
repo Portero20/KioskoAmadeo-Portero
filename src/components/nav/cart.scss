@@ -1,10 +1,11 @@
 //Estilos para el carrito
 .containerCarrito {
 
-  width: 5%;
+  width: 2rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  text-decoration: none;
 
 
   .sizeCart {
@@ -17,8 +18,14 @@
     color: white;
     font-weight: bolder;
 
-
-
   }
+
+
+
+}
+
+.carritoTitulo{
+
+  font-weight: bolder;
 
 }

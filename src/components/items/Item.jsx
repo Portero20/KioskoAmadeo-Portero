@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom'; //importamos para darle un link al boton "ver detalle"
 
 const Item = ({item}) => {
     return (
@@ -14,7 +14,7 @@ const Item = ({item}) => {
 
                 </div>
                 <h5 className='precioColor'>${item.price} </h5>
-                <Link to={`/detail/${item.id}`}>
+                <Link to={`/detail/${item.id}`}> 
                 
                     
                     <button className='estiloBoton'>Ver detalle</button>

@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import ItemListContainer from '../../ItemListContainer/ItemListContainer';
 import ItemDetailContainer from '../items/ItemDetailContainer';
 import Home from './Home';
+import Cart from '../nav/Cart'
 
 const Main = () => {
   return (
@@ -13,10 +14,11 @@ const Main = () => {
 
         <Routes>
 
-            <Route path='/category/:categoryName' element={<ItemListContainer/>}/>
-            <Route path='/' element={<Home/>}/>
-            <Route path='products' element={<ItemListContainer/>}/>
-            <Route path='/detail/:idProd' element={<ItemDetailContainer/>} />
+          <Route path='/category/:categoryName' element={<ItemListContainer/>}/>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/cart' element={<Cart/>}/>
+          <Route path='/tienda' element={<ItemListContainer/>}/>
+          <Route path='/detail/:idProd' element={<ItemDetailContainer/>} />
 
            
         </Routes>

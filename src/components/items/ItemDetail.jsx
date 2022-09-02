@@ -33,13 +33,7 @@ const ItemDetail = ({product}) => {
 
     </div>
     )
-    }
+  }
 
 export default ItemDetail
 
-
-{/* <img src={product.img} alt="" width='130px'/>
-      <h2 className='letraProductos'>{product.title}</h2>
-      <h2 className='letraProductos'>{product.description}</h2>
-      <h2 className='letraProductos'>${product.price}</h2>
-      <ItemCount stock={10} initial={1} onAdd={onAdd}/> */}

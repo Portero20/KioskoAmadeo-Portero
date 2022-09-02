@@ -8,10 +8,9 @@ import ItemList from "../components/items/ItemList";
 
 //con react las clases las ponemos con: className y funciona igual que una class
 
-const ItemListContainer = () => { //test es un objeto, para acceder al valor del main es test mediante llaves para decirle que es js
+const ItemListContainer = () => { 
 
-  const {categoryName} = useParams();  //desestructuramos
-
+  const {categoryName} = useParams();  //desestructuramos y esto me devuelve bebidas, golosinas y varios
 
   //Practica, el 99% de los casos las promesas no las estaremos haciendo a mano porque eso depende de la API si esta bien o mal
 
@@ -25,7 +24,7 @@ const ItemListContainer = () => { //test es un objeto, para acceder al valor del
 
       setTimeout(() => {
 
-        const prodFiltrados = products.filter((prod) => prod.category === categoryName)
+        const prodFiltrados = products.filter((prod) => prod.category === categoryName) //utilizamos filter porque es un array de objetos
         
         res(categoryName ? prodFiltrados : products) //esta respuesta va a caer en el then, por lo tanto me va a mostrar mi array
         
@@ -52,7 +51,7 @@ const ItemListContainer = () => { //test es un objeto, para acceder al valor del
     })
 
 
-  },[categoryName]) //le pasamos el categoryName, cuando cambie la URL se va a volver a ejecutar
+  },[categoryName]) //le pasamos el array de dependencias categoryName, cuando cambie la URL se va a volver a ejecutar
 
   
 
