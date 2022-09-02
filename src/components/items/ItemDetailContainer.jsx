@@ -20,7 +20,7 @@ const ItemDetailContainer = () => {
 
       setTimeout(() => {
 
-        const unicoProducto = products.find((prod) => prod.id === idProdNumerico);  //me encuentra el producto por el id en este caso idProdNumerico
+        const unicoProducto = products.find((prod) => prod.id === idProdNumerico);  //me encuentra el producto por el id en este caso idProdNumerico (me encuentra la primer coincidencia)
 
         res(idProdNumerico ? unicoProducto : products) //utilizamos operador ternario para que el código no sea largo
         
@@ -45,7 +45,7 @@ const ItemDetailContainer = () => {
     })
 
 
-  },[idProd])
+  },[itemID])
 
 
   return (
