@@ -10,7 +10,7 @@ import ItemList from "../components/items/ItemList";
 
 const ItemListContainer = () => { 
 
-  const {categoryName} = useParams();  //desestructuramos y esto me devuelve bebidas, golosinas y varios
+  const {categoryID} = useParams();  //desestructuramos y esto me devuelve bebidas, golosinas y varios
 
   //Practica, el 99% de los casos las promesas no las estaremos haciendo a mano porque eso depende de la API si esta bien o mal
 
@@ -24,9 +24,9 @@ const ItemListContainer = () => {
 
       setTimeout(() => {
 
-        const prodFiltrados = products.filter((prod) => prod.category === categoryName) //utilizamos filter porque es un array de objetos
+        const prodFiltrados = products.filter((prod) => prod.category === categoryID) //utilizamos filter porque es un array de objetos
         
-        res(categoryName ? prodFiltrados : products) //esta respuesta va a caer en el then, por lo tanto me va a mostrar mi array
+        res(categoryID ? prodFiltrados : products) //esta respuesta va a caer en el then, por lo tanto me va a mostrar mi array
         
       }, 2000);
   
@@ -51,7 +51,7 @@ const ItemListContainer = () => {
     })
 
 
-  },[categoryName]) //le pasamos el array de dependencias categoryName, cuando cambie la URL se va a volver a ejecutar
+  },[categoryID]) //le pasamos el array de dependencias categoryName, cuando cambie la URL se va a volver a ejecutar
 
   
 

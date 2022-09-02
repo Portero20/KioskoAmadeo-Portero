@@ -6,10 +6,10 @@ import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
 
-  const {idProd} = useParams()
+  const {itemID} = useParams()
   const [product,setProduct] = useState({})
   const [isLoading, setLoading] = useState(true) //para el loading y lo inicializamos con un valor booleano
-  const idProdNumerico = Number(idProd) //tenemos que pasarlo a number porque si no lo va a leer como String
+  const idProdNumerico = Number(itemID) //tenemos que pasarlo a number porque si no lo va a leer como String
 
 
   useEffect(() => {
