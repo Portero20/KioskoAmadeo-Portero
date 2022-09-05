@@ -42,7 +42,7 @@ const ItemCount = ({stock,initial,onAdd}) => {
 
         <div className='contenedorContador'>
 
-            <p className='count' style={{fontWeight:'bolder'}}>Stock : {count}</p> 
+            <p className='count' style={{fontWeight:'bolder'}}>Cantidad : {count}</p> 
             <button className='botonSumar' onClick={sumar}>+</button>
             <button className='botonRestar' onClick={restar}>-</button>
 
