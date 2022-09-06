@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import '../items/items.scss'
+import toast, { Toaster } from 'react-hot-toast';
 
 const ItemCount = ({stock,initial,onAdd}) => {
 
@@ -13,7 +14,7 @@ const ItemCount = ({stock,initial,onAdd}) => {
 
         } else {
             
-            alert("Máximo de stock") //si no saltara este mensaje
+            alert(`Máximo de stock ${stock} `) //si no saltara este mensaje
 
         }
 
@@ -31,9 +32,17 @@ const ItemCount = ({stock,initial,onAdd}) => {
 
         } else {
 
-            alert("No se puede agregar 0 productos")
+            toast.error("No se pueden agregar 0 productos.");
+
+
             
         }
+
+    }
+
+    const agregar = () =>{
+
+        onAdd(count)
 
     }
 
@@ -46,9 +55,27 @@ const ItemCount = ({stock,initial,onAdd}) => {
             <button className='botonSumar' onClick={sumar}>+</button>
             <button className='botonRestar' onClick={restar}>-</button>
 
+
+            <Toaster
+                position="bottom-right"
+                reverseOrder={false}
+                gutter={8}
+                containerClassName=""
+                containerStyle={{}}
+                toastOptions={{
+                    // Define default options
+                    duration: 2000,
+                    style: {
+                     background: '#363636',
+                     color: '#fff',
+                    },
+
+                }}
+            />
+
         </div>
         
-        <button className='botonAgregar' onClick={onAdd}>Agregar al carrito</button>
+        <button className='botonAgregar' onClick={agregar}>Agregar al carrito</button>
 
     </div>
   )

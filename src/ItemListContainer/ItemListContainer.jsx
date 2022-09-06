@@ -61,7 +61,7 @@ const ItemListContainer = () => {
     <div>
 
       {
-        isLoading ? <Spinner animation="border" role="status"> 
+        isLoading ? <Spinner className="spinner2" style={{padding:'25px'}} animation="border" role="status"> 
         <span className="visually-hidden">Loading...</span>
         </Spinner> : <ItemList estado={productos}/>
       }
