@@ -50,11 +50,11 @@ const ItemDetailContainer = () => {
 
   return (
     
-    <div>
+    <div className='contenedorSpinner'>
 
       {
-        isLoading ? <Spinner className='spinner' style={{padding:'25px'}} animation="border" role="status"> 
-        <span className="visually-hidden">Loading...</span>
+        isLoading ? <Spinner style={{padding:'25px',marginBottom:'43rem'}} animation="border" role="status" className='spinnerContainer'> 
+        <span className="visually-hidden spinner">Loading...</span>
         </Spinner> : <ItemDetail product={product} key={product.id} />
       }
       

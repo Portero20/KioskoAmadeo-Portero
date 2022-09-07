@@ -14,6 +14,7 @@ const Item = ({item}) => {
 
                 </div>
                 <h5 className='precioColor'>${item.price} </h5>
+                <h6>Stock: {item.stock}</h6>
                 <Link to={`/detail/${item.id}`}> 
                 
                     

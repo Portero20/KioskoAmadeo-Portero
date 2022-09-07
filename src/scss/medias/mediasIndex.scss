@@ -70,3 +70,27 @@
 
 }
 
+@media (max-width:1104px){
+
+    .wrapper{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 210px;
+        margin-top: 200px;
+
+    }
+
+    .botonAgregar{
+
+        margin-bottom: 200px;
+
+    }
+
+
+}
+
+
+

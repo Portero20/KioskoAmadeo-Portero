@@ -14,7 +14,7 @@ const ItemCount = ({stock,initial,onAdd}) => {
 
         } else {
             
-            alert(`Máximo de stock ${stock} `) //si no saltara este mensaje
+            alert(`Máximo de stock: ${stock} `) //si no saltara este mensaje
 
         }
 
@@ -43,7 +43,7 @@ const ItemCount = ({stock,initial,onAdd}) => {
     const agregar = () =>{
 
         onAdd(count)
-
+        
     }
 
   return (
