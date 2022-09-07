@@ -1,6 +1,8 @@
 import React from 'react'
+import { useContext } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { CartContext } from '../context/CartContext'
 import ItemCount from '../counter/ItemCount'
 import '../items/items.scss'
 
@@ -9,11 +11,18 @@ const ItemDetail = ({product}) => {
 
   const [cantidad,setCantidad] = useState(0);
 
+  const {cart,addToCart} = useContext(CartContext)
+
+
   const onAdd = (cantidad) =>{
 
-    setCantidad(cantidad);
+    setCantidad(cantidad); //me llega la cantidad de contador
+    addToCart(product,cantidad); //para setear y le pasamos como parametro product que es donde estan todos mis productos y la cantidad que me llega como argumento o tambien le puedo pasar el estado
+
 
   }
+
+  console.log(cart);
 
 
 

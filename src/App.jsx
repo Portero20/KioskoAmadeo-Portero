@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import {BrowserRouter} from 'react-router-dom';
 import "./scss/index.scss";
 import Main from "./components/main/Main";
+import CartProvider from "./components/context/CartContext";
 
 //podemos hacer un export de una constante, tiene un import diferente
 
@@ -15,11 +16,16 @@ const App = () => {
   return (
     //JSX solo debe retornar un solo elemento, no es lo ideal tener muchas etiquetas dentro porque con react creamos componentes
 
-    <BrowserRouter>
-      <Header />
-      <Main/>
-      <Footer />
-    </BrowserRouter>
+    <CartProvider>
+
+      <BrowserRouter>
+        <Header />
+        <Main/>
+        <Footer />
+      </BrowserRouter>
+
+    </CartProvider>
+   
   );
 };
 
