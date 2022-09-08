@@ -23,6 +23,7 @@ const App = () => {
         <Main/>
         <Footer />
       </BrowserRouter>
+      
 
     </CartProvider>
    

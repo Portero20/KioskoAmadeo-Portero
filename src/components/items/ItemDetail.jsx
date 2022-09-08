@@ -11,20 +11,18 @@ const ItemDetail = ({product}) => {
 
   const [cantidad,setCantidad] = useState(0);
 
-  const {cart,addToCart} = useContext(CartContext)
+  const {addItem} = useContext(CartContext);
 
 
-  const onAdd = (cantidad) =>{
 
-    setCantidad(cantidad); //me llega la cantidad de contador
-    addToCart(product,cantidad); //para setear y le pasamos como parametro product que es donde estan todos mis productos y la cantidad que me llega como argumento o tambien le puedo pasar el estado
+  const onAdd = (cantidadItem) =>{
+
+    setCantidad(cantidadItem); //me llega la cantidad de contador
+    addItem(product,cantidadItem); //para setear y le pasamos como parametro product que es donde estan todos mis productos y la cantidad que me llega como argumento o tambien le puedo pasar el estado
 
 
   }
-
-  console.log(cart);
-
-
+  
 
   return (
     <div className='estilosBoton'>

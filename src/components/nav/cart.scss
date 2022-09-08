@@ -24,8 +24,65 @@
 
 }
 
-.carritoTitulo{
+.carritoTitulo {
 
   font-weight: bolder;
+
+}
+
+
+//Carrito compra productos
+
+.containerFlex {
+
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+
+  .containerCompras {
+
+    background-color: white;
+    width: 51rem;
+    padding: 10px;
+
+    .flexUbicar {
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .tituloCompra {
+
+        font-weight: bolder;
+
+      }
+
+      .productosCarrito {
+
+        height: 100px;
+
+      }
+
+      .precioTitulo {
+
+        font-weight: bolder;
+
+      }
+
+      .stockTitulo {
+
+        font-weight: bolder;
+
+      }
+
+      .tituloCategoria {
+
+        font-weight: bolder;
+
+      }
+
+    }
+
+  }
 
 }
