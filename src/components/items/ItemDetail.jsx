@@ -19,7 +19,7 @@ const ItemDetail = ({product}) => {
 
     setCantidad(cantidadItem); //me llega la cantidad de contador
     addItem(product,cantidadItem); //para setear y le pasamos como parametro product que es donde estan todos mis productos y la cantidad que me llega como argumento o tambien le puedo pasar el estado
-
+    
 
   }
   

@@ -14,8 +14,23 @@ const CartProvider = ({children}) => {
 
     }
 
+    //función para vaciar el carrito
+    const clearCart = () => {
+
+      setCart([]);
+
+    }
+
+    //función eliminar un solo producto
+
+
+    //función calcular total de unidades cart widget
+
+    //calcular total precio
+
+
   return( //a traves del value paso mi estado y la función que setea mi estado
-    <CartContext.Provider value={{cart,addItem}}> 
+    <CartContext.Provider value={{cart,addItem,clearCart}}> 
         {children} 
     </CartContext.Provider>
   ) 
