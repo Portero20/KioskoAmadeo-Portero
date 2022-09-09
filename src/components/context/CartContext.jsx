@@ -41,7 +41,7 @@ const CartProvider = ({children}) => {
 
     }
 
-    //función eliminar un solo producto pasandole el id 
+    //función eliminar un solo producto pasandole el id con filter
 
     const eliminarProd = (id) =>{
 
