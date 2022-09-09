@@ -10,13 +10,15 @@ const CartProvider = ({children}) => {
 
     const addItem = (item,qty) =>{ //creamos una funcion para setear mi carrito
 
-      if (isInCart(item.id)) {
+      if (isInCart(item.id)) { //para acceder al id tenemos que poner la función y pasarle el id
 
         //lo encuentro y le sumo la cantidad
 
         sumarCantidad(item,qty)
         
-      } else {
+      } else { 
+        
+        //si no lo encuentra, lo setea en el carrito
 
         setCart([...cart,{...item,qty}]); //de esta manera adjuntamos cantidad dentro del objeto item, le pasamos cart tmb para que no se pise y me lo agregue
         
@@ -28,7 +30,7 @@ const CartProvider = ({children}) => {
     //función para vaciar el carrito
     const clearCart = () => {
 
-      setCart([]);
+      setCart([]); //para vaciar el carrito tenemos que volver al estado inicial, ponemos nuestro estado con un array vacío
 
     }
 
@@ -37,7 +39,7 @@ const CartProvider = ({children}) => {
 
     const isInCart = (id) =>{
 
-      return cart.some((prod) => prod.id === id)
+      return cart.some((prod) => prod.id === id) //por cada iteracción voy a preguntar si producto.id es igual a algún id
 
     }
 
@@ -49,7 +51,7 @@ const CartProvider = ({children}) => {
 
       //utilizamos el filter para eliminar 
 
-      const carritoFiltrado = cart.filter((prod) => prod.id !== id); //filtramos todos los productos y nos quedamos con todos los que no sean ese id
+      const carritoFiltrado = cart.filter((prod) => prod.id !== id); //filtramos todos los productos y me elimina los productos que sean distintos de ese id
 
       setCart(carritoFiltrado); //Actualizamos el estado
 
