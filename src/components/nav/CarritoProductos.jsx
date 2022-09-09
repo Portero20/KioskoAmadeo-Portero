@@ -4,7 +4,8 @@ import { CartContext } from '../context/CartContext'
 
 const CarritoProductos = ({product}) => {
 
-    const {clearCart} = useContext(CartContext)
+    const {clearCart,eliminarProd} = useContext(CartContext)
+
 
   return (
     <div key={product.id}>
@@ -21,6 +22,7 @@ const CarritoProductos = ({product}) => {
                     <h3 className='stockTitulo'>{product.stock}</h3>
                     <img className='productosCarrito' src={product.img} alt="" />
                     <button onClick={clearCart}>Vaciar carrito</button>
+                    <button onClick={() => eliminarProd(product.id)}>Eliminar</button>
                 </div>
 
 
