@@ -14,7 +14,7 @@ const CartProvider = ({children}) => {
 
         //lo encuentro y le sumo la cantidad
 
-        sumarCantidad(item,qty)
+        sumarCantidad(item,qty) //le pasamos item y qty para comparar
         
       } else { 
         
@@ -64,8 +64,8 @@ const CartProvider = ({children}) => {
 
       const carritoActualizado = cart.map((prod) =>{ //por cada iteracción recorremos cada producto que tenga en el carrito
 
-
-        if (prod.id === item.id) { 
+        //hacemos una validación 
+        if (prod.id === item.id) { //preguntamos que producto tenemos que actualizar, si el prod.id que estoy iterando es igual al id del producto que estoy agregando al carrito
 
           const productoActualizado = {  //esto va a ser un objeto
 
@@ -74,17 +74,17 @@ const CartProvider = ({children}) => {
 
           }
 
-          return productoActualizado;
+          return productoActualizado; //retornamos para que me lo muestre
           
-        } else {
+        } else { //si no se cumple 
 
-          return prod;
+          return prod; //retornamos la iteracción
           
         }
 
       }) 
 
-      setCart(carritoActualizado)  //seteamos mi carrito actualizado
+      setCart(carritoActualizado)  //seteamos mi carrito actualizado porque nos llega un nuevo array
 
 
     }
