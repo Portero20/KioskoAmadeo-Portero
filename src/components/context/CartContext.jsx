@@ -37,7 +37,7 @@ const CartProvider = ({children}) => {
 
     //función corroborar si esta o no en el carrito
 
-    const isInCart = (id) =>{
+    const isInCart = (id) =>{ //el id me viene del hijo isInCart
 
       return cart.some((prod) => prod.id === id) //por cada iteracción voy a preguntar si producto.id es igual a algún id
 

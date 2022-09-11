@@ -5,7 +5,7 @@ import CarritoProductos from './CarritoProductos';
 
 const Cart = () => {
 
-  const {cart} = useContext(CartContext);
+  const {cart,clearCart} = useContext(CartContext);
 
 
   return (
@@ -26,6 +26,8 @@ const Cart = () => {
           })
 
         }
+
+         <button className='clearCart' onClick={clearCart}>Vaciar carrito</button>
 
 
 

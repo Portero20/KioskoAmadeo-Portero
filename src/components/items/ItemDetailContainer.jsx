@@ -16,8 +16,6 @@ const ItemDetailContainer = () => {
 
     const obtenerProducts = new Promise((res,rej) => {
 
-      
-
       setTimeout(() => {
 
         const unicoProducto = products.find((prod) => prod.id === idProdNumerico);  //me encuentra el producto por el id en este caso idProdNumerico (me encuentra la primer coincidencia)
