@@ -1,34 +1,17 @@
-//Animaciones para los enlaces de la navbar
-.navigator {
+.logoKiosko{
 
-    position: relative;
+    transition: all .2s;
 
-    &::after {
+    &:hover{
 
-        content: '';
-        position: absolute;
-        right: 8px;
-        top: 31px;
-        bottom: 0;
-        width: 80%;
-        height: 2px;
-        background-color: white;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform .5s;
+        transform: scale(1.05);
 
     }
-
-    &:hover::after {
-
-        transform: scaleX(1);
-        transform-origin: left;
-
-    }
-
-
     
 }
 
+.textoPrueba{
 
+    height: 200px;
 
+}

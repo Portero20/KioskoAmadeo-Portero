@@ -1,6 +1,6 @@
 import React from "react";
 import CartWidget from "./CartWidget";
-import "./navbar.module.scss";
+import navBar from "./navbar.module.scss";
 import logoPng from '../../img/logo_small.png';
 import "./burger.css";
 import { Link } from "react-router-dom";
@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="container-fluid d-flex">
         <Link to="/" className="navbar-brand">
 
-          <img src={logoPng} alt="" style={{height:'40px'}} />
+          <img className={navBar.logoKiosko} src={logoPng} alt="" style={{height:'40px'}}/>
 
         </Link>
         <button className="navbar-toggler d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
