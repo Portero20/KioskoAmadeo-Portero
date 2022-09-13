@@ -8,11 +8,11 @@ const ItemCount = ({stock,onAdd,initial = 1}) => {
     const [count,setCount] = useState(initial) //lee mi estado y ve que el valor inicial es 1
 
     
-    useEffect(() =>{
+    useEffect(() =>{ //utilizamos un useEffect
 
-        setCount(initial)
+        setCount(initial) //setea el contador con el num inicial
 
-    },[initial]);
+    },[initial]); //escucha si cambia el numero inicial
 
 
     const sumar = () =>{

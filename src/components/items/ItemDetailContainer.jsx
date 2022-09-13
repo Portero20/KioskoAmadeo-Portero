@@ -22,7 +22,7 @@ const ItemDetailContainer = () => {
 
         res(idProdNumerico ? unicoProducto : products) //utilizamos operador ternario para que el código no sea largo
         
-      }, 2000);
+      }, 500);
 
     })
     obtenerProducts

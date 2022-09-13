@@ -28,7 +28,7 @@ const ItemListContainer = () => {
         
         res(categoryID ? prodFiltrados : products) //esta respuesta va a caer en el then, por lo tanto me va a mostrar mi array
         
-      }, 2000);
+      }, 500);
   
   
     })

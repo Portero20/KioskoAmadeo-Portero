@@ -23,7 +23,7 @@ const ItemDetail = ({product}) => {
 
   }
 
-  const quantity = getProductQuantity(product.id) 
+  const quantity = getProductQuantity(product.id) //como parámetro recib el id porque es lo que quiero
   
 
   return (

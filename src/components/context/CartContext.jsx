@@ -89,9 +89,9 @@ const CartProvider = ({children}) => {
 
     }
 
-    //función para las unidades
+    //función para saber cuantas unidades tengo en mi carrito
 
-    const getProductQuantity = (id) =>{
+    const getProductQuantity = (id) =>{ //le pasamos el id porque es lo que queremos comparar
 
       const product = cart.find((prod) => prod.id === id) //recorremos mi carrito y va a preguntar si ese producto ya esta en el carrito
 
@@ -103,7 +103,7 @@ const CartProvider = ({children}) => {
 
     const totalPrice = () =>{
 
-      let acumulador = 0;
+      let acumulador = 0; //creamos un acumulador
 
       cart.forEach((prod) => { //iteramos el carrito
 
@@ -129,6 +129,14 @@ const CartProvider = ({children}) => {
       })
 
       return acumulador; //por cada vuelta retorno mi acumulador
+
+    }
+
+    //función para el largo del carrito
+    const totalProductos = () =>{
+
+      return cart.length;
+
 
     }
 
