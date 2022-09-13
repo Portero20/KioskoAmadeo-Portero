@@ -36,7 +36,7 @@ const ItemListContainer = () => {
     .then((response) => { //en los parentesis cae la resolucion de la promesa
   
       setProductos(response);  //guardamos en mi estado productos el response que me llega,setProductos actualiza mi estado cuando me llega el response
-  
+      setLoading(false);
   
     })  
     .catch((err) =>{
@@ -44,11 +44,11 @@ const ItemListContainer = () => {
       console.error(err);   //salio todo mal
       
     })
-    .finally(() =>{
-  
-      setLoading(false)  //se ejecuta siempre
-  
-    })
+    return () =>{
+
+      setLoading(true)
+
+    }
 
 
   },[categoryID]) //le pasamos el array de dependencias categoryName, cuando cambie la URL se va a volver a ejecutar

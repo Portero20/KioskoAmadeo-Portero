@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../context/CartContext'
+import toast, { Toaster } from 'react-hot-toast';
 import ItemCount from '../counter/ItemCount'
 import '../items/items.scss'
 
@@ -11,8 +12,7 @@ const ItemDetail = ({product}) => {
 
   const [cantidad,setCantidad] = useState(0);
 
-  const {addItem} = useContext(CartContext);
-
+  const {addItem,getProductQuantity} = useContext(CartContext);
 
 
   const onAdd = (cantidadItem) =>{
@@ -22,6 +22,8 @@ const ItemDetail = ({product}) => {
     
 
   }
+
+  const quantity = getProductQuantity(product.id) 
   
 
   return (
@@ -40,7 +42,7 @@ const ItemDetail = ({product}) => {
             <p className='spanPrice'>Precio: ${product.price}</p>
             
             {
-              cantidad === 0 ? <ItemCount stock={product.stock} initial={1} onAdd={onAdd} /> : <Link to="/cart" className='verCarrito'>Ver carrito</Link>
+              cantidad === 0 ? <ItemCount stock={product.stock} initial={quantity} onAdd={onAdd} /> : <Link to="/cart" className='verCarrito'>Ver carrito</Link>
             }
 
           </div>

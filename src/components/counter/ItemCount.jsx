@@ -1,20 +1,31 @@
 import React, {useState} from 'react'
 import '../items/items.scss'
 import toast, { Toaster } from 'react-hot-toast';
+import { useEffect } from 'react';
 
-const ItemCount = ({stock,initial,onAdd}) => {
+const ItemCount = ({stock,onAdd,initial = 1}) => {
 
     const [count,setCount] = useState(initial) //lee mi estado y ve que el valor inicial es 1
+
+    
+    useEffect(() =>{
+
+        setCount(initial)
+
+    },[initial]);
+
 
     const sumar = () =>{
 
         if(count < stock) {   //si count es menor al tope le sumaremos 1, cuando llegue al tope del stock ya no me va a dejar sumar
             
-            setCount(count+initial)  //lo suma
+            setCount(count+1)  //lo suma
 
         } else {
             
-            alert(`Máximo de stock: ${stock} `) //si no saltara este mensaje
+            toast('Máximo de stock', {
+                icon: '❗',
+              }); //si no saltara este mensaje
 
         }
 
@@ -26,14 +37,13 @@ const ItemCount = ({stock,initial,onAdd}) => {
     const restar = () => {
 
 
-        if (count > initial) {  // si count es mayor le resta 1
+        if(count > 1) {  // si count es mayor le resta 1
             
-            setCount(count-initial) //lo resta
+            setCount(count-1) //lo resta
 
         } else {
 
             toast.error("No se pueden agregar 0 productos.");
-
 
             
         }
@@ -43,7 +53,12 @@ const ItemCount = ({stock,initial,onAdd}) => {
     const agregar = () =>{
 
         onAdd(count)
-        
+    }
+
+    const toastify = () =>{
+
+        toast.success('Successfully toasted!')
+
     }
 
   return (

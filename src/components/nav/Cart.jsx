@@ -1,11 +1,33 @@
 import React from 'react'
 import { useContext } from 'react'
+import { Link } from 'react-router-dom';
 import { CartContext } from '../context/CartContext'
+import carritoVacio from '../../img/cartVacio.png'
 import CarritoProductos from './CarritoProductos';
 
 const Cart = () => {
 
-  const {cart,clearCart} = useContext(CartContext);
+  const {cart,clearCart,totalPrice} = useContext(CartContext);
+  
+
+    if(cart.length === 0){
+
+      return(
+        <div>
+          <div className='flexVacio'>
+            <h2 style={{fontWeight:'bolder'}}>Carrito Vacío</h2>
+            <img src={carritoVacio} alt="" className='cartVacio' />
+            <Link to="/tienda" className='linkCondition'>
+
+              Empeza a comprar
+
+            </Link>
+          </div>
+          
+        </div>
+      )
+
+    }
 
 
   return (
@@ -27,7 +49,12 @@ const Cart = () => {
 
         }
 
-         <button className='clearCart' onClick={clearCart}>Vaciar carrito</button>
+        <div className='containerButton'>
+          <button className='clearCart' onClick={clearCart}>🗑️ Vaciar</button>
+          <h4 style={{fontWeight:'bolder'}}>Total: $ {totalPrice()} </h4>
+        </div>
+
+        
 
 
 

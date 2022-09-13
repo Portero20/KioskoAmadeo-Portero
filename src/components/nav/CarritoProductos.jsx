@@ -1,10 +1,12 @@
 import React from 'react'
 import { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
+import {BsFillTrashFill} from 'react-icons/bs'
 
 const CarritoProductos = ({product}) => {
 
     const {eliminarProd} = useContext(CartContext)
+    
 
 
   return (
@@ -19,9 +21,11 @@ const CarritoProductos = ({product}) => {
                     <h3 className='tituloCompra'>{product.title}</h3>
                     <h3 className='precioTitulo'>${product.price}</h3>
                     <h3 className='tituloCategoria'>{product.category}</h3>
-                    <h3 className='stockTitulo'>{product.stock}</h3>
+                    <h3 className='stockTitulo'>{product.qty}</h3>
                     <img className='productosCarrito' src={product.img} alt="" />
-                    <button className='clearButton' onClick={() => eliminarProd(product.id)}>Eliminar</button>
+                    <button className='clearButton' onClick={() => eliminarProd(product.id)}>
+                        <BsFillTrashFill/>
+                    </button>
                 </div>
 
 

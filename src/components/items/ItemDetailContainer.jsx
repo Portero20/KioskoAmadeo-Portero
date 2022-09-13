@@ -29,6 +29,7 @@ const ItemDetailContainer = () => {
     .then((response) => {
 
       setProduct(response)
+      setLoading(false);
 
     })
     .catch((error) =>{
@@ -36,11 +37,11 @@ const ItemDetailContainer = () => {
       console.error(error);
 
     })
-    .finally(() => {
+    return () =>{
 
-      setLoading(false)
+      setLoading(true)
 
-    })
+    }
 
 
   },[itemID])
