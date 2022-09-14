@@ -5,7 +5,7 @@ import { CartContext } from "../context/CartContext";
 
 const CartWidget = () => {
 
-  const {totalQuantity} = useContext(CartContext);
+  const {totalQuantity,totalProductos} = useContext(CartContext);
 
 
   return (
@@ -13,7 +13,7 @@ const CartWidget = () => {
     <div className="containerCarrito">
 
       <span className="sizeCart"><AiOutlineShoppingCart /></span>
-      <span className="colorNumber">{totalQuantity() === 0 ? "" : totalQuantity()}</span>
+      <span style={{textDecoration:'none'}} className="colorNumber decoration">{totalProductos() === 0 ? "" : totalProductos()}</span>
 
     </div>
     

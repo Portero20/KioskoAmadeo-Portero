@@ -51,6 +51,7 @@ const Cart = () => {
 
         <div className='containerButton'>
           <button className='clearCart' onClick={clearCart}>🗑️ Vaciar</button>
+          <button className='finalizarButton'>Finalizar Compra</button>
           <h4 style={{fontWeight:'bolder'}}>Total: $ {totalPrice()} </h4>
         </div>
 
