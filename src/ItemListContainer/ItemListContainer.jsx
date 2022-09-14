@@ -4,7 +4,8 @@ import "animate.css";
 import Spinner from 'react-bootstrap/Spinner'
 import { products } from "../components/mock/productos";
 import ItemList from "../components/itemList/ItemList";
-
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../../src/components/firebase/firebaseConfig";
 
 //con react las clases las ponemos con: className y funciona igual que una class
 
@@ -19,37 +20,44 @@ const ItemListContainer = () => {
 
   useEffect(() => {
 
+    const itemCollection = collection(db,"productos");
 
-    const getProducts = new Promise ((res,rej) => { //si pongo res caera en el then y si pongo rej en el catch
+    const q = query(itemCollection,where("category","==",categoryID));
+    
+    getDocs(q)
 
-      setTimeout(() => {
+    .then((resp) => {
 
-        const prodFiltrados = products.filter((prod) => prod.category === categoryID) //utilizamos filter porque es un array de objetos
-        
-        res(categoryID ? prodFiltrados : products) //esta respuesta va a caer en el then, por lo tanto me va a mostrar mi array
-        
-      }, 500);
-  
-  
-    })
-    getProducts
-    .then((response) => { //en los parentesis cae la resolucion de la promesa
-  
-      setProductos(response);  //guardamos en mi estado productos el response que me llega,setProductos actualiza mi estado cuando me llega el response
-      setLoading(false);
-  
-    })  
-    .catch((err) =>{
-  
-      console.error(err);   //salio todo mal
       
+      const products = resp.docs.map((produ)=>{
+
+
+        return{
+
+          id: produ.id,
+          ...produ.data(),
+
+
+        };
+
+
+      });
+
+      setProductos(products);
+
+
     })
-    return () =>{
+    .catch((error) =>{
+      console.log(error);
+    })
+    .finally(() =>{
 
-      setLoading(true)
+      setLoading(false);
 
-    }
+    })
 
+
+    
 
   },[categoryID]) //le pasamos el array de dependencias categoryName, cuando cambie la URL se va a volver a ejecutar
 
