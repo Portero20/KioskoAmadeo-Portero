@@ -28,6 +28,8 @@ const ItemListContainer = () => {
 
     .then((resp) => {
 
+      console.log(resp);
+
       
       const products = resp.docs.map((produ)=>{
 
