@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { CartContext } from '../context/CartContext'
 import carritoVacio from '../../img/cartVacio.png'
 import CarritoProductos from './CarritoProductos';
+import "./carrito.scss";
 
 const Cart = () => {
 

@@ -1,9 +1,9 @@
 import React from "react";
-import CartWidget from "./CartWidget";
 import navBar from "./navbar.module.scss";
 import logoPng from '../../img/logo_small.png';
 import "./burger.css";
 import { Link } from "react-router-dom";
+import CartWidget from "../cartWidget/CartWidget";
 
 const Navbar = () => {
   return (

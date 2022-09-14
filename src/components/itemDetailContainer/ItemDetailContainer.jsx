@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from 'react'
 import Spinner from 'react-bootstrap/Spinner';
-import ItemDetail from './ItemDetail'
 import { products } from '../mock/productos'
 import { useParams } from 'react-router-dom';
+import ItemDetail from '../itemDetail/ItemDetail';
 
 const ItemDetailContainer = () => {
 
@@ -54,7 +54,7 @@ const ItemDetailContainer = () => {
       {
         isLoading ? <Spinner style={{padding:'25px',marginBottom:'43rem'}} animation="border" role="status" className='spinnerContainer'> 
         <span className="visually-hidden spinner">Loading...</span>
-        </Spinner> : <ItemDetail product={product} key={product.id} />
+        </Spinner> : <ItemDetail product={product} key={product.id}/>
       }
       
     </div>

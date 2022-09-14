@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import "animate.css";
 import Spinner from 'react-bootstrap/Spinner'
 import { products } from "../components/mock/productos";
-import ItemList from "../components/items/ItemList";
+import ItemList from "../components/itemList/ItemList";
 
 
 //con react las clases las ponemos con: className y funciona igual que una class

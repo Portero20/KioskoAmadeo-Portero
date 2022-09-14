@@ -3,9 +3,8 @@ import { useContext } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../context/CartContext'
-import toast, { Toaster } from 'react-hot-toast';
 import ItemCount from '../counter/ItemCount'
-import '../items/items.scss'
+import "./itemDetail.scss";
 
 
 const ItemDetail = ({product}) => {

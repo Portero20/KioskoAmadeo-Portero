@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import '../items/items.scss'
 import toast, { Toaster } from 'react-hot-toast';
 import { useEffect } from 'react';
+import "../counter/count.scss"
 
 const ItemCount = ({stock,onAdd,initial = 1}) => {
 
@@ -54,12 +54,7 @@ const ItemCount = ({stock,onAdd,initial = 1}) => {
 
         onAdd(count)
     }
-
-    const toastify = () =>{
-
-        toast.success('Successfully toasted!')
-
-    }
+    
 
   return (
     <div>

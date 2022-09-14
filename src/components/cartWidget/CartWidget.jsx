@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import "./cart.scss";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CartContext } from "../context/CartContext";
+import "./cartWidget.scss";
 
 const CartWidget = () => {
 
@@ -13,7 +13,7 @@ const CartWidget = () => {
     <div className="containerCarrito">
 
       <span className="sizeCart"><AiOutlineShoppingCart /></span>
-      <span style={{textDecoration:'none'}} className="colorNumber decoration">{totalProductos() === 0 ? "" : totalProductos()}</span>
+      <span style={{textDecoration:'none'}} className="colorNumber decoration">{totalQuantity() === 0 ? "" : totalQuantity()}</span>
 
     </div>
     
