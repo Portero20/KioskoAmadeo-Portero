@@ -16,37 +16,34 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
 
-   const detailCollection = collection(db,"productos");
+    const obtenerProducts = new Promise((res,rej) => {
 
-   const ref = doc(detailCollection,itemID);
+      setTimeout(() => {
 
-   getDoc(ref)
-   .then((res) =>{
+        const unicoProducto = products.find((prod) => prod.id === idProdNumerico);  //me encuentra el producto por el id en este caso idProdNumerico (me encuentra la primer coincidencia)
 
+        res(idProdNumerico ? unicoProducto : products) //utilizamos operador ternario para que el código no sea largo
+        
+      }, 500);
 
-    setProduct({
-      
-      id: res.id,
-      ...res.data(),
-      
     })
+    obtenerProducts
+    .then((response) => {
 
-    console.log(res);
+      setProduct(response)
+      setLoading(false);
 
+    })
+    .catch((error) =>{
 
+      console.error(error);
 
-   })
-   .catch((error) =>{
+    })
+    return () =>{
 
-    console.error(error);
+      setLoading(true)
 
-
-   })
-   .finally(() =>{
-
-    setLoading(false);
-
-   })
+    }
 
 
   },[itemID])
@@ -67,3 +64,38 @@ const ItemDetailContainer = () => {
 }
 
 export default ItemDetailContainer
+
+
+
+
+// const detailCollection = collection(db,"productos");
+
+//    const ref = doc(detailCollection,itemID);
+
+//    getDoc(ref)
+//    .then((res) =>{
+
+
+//     setProduct({
+      
+//       id: res.id,
+//       ...res.data(),
+      
+//     })
+
+//     console.log(res);
+
+
+
+//    })
+//    .catch((error) =>{
+
+//     console.error(error);
+
+
+//    })
+//    .finally(() =>{
+
+//     setLoading(false);
+
+//    })
