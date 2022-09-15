@@ -13,7 +13,7 @@ const CartWidget = () => {
     <div className="containerCarrito">
 
       <span className="sizeCart"><AiOutlineShoppingCart /></span>
-      <span style={{textDecoration:'none'}} className="colorNumber decoration">{totalQuantity() === 0 ? "" : totalQuantity()}</span>
+      <span style={{textDecoration:'none'}} className="colorNumber">{totalQuantity() === 0 ? "" : totalQuantity()}</span>
 
     </div>
     

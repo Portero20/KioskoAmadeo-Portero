@@ -29,23 +29,24 @@ const ItemListContainer = () => {
     .then((resp) => {
 
       console.log(resp);
-
       
       const products = resp.docs.map((produ)=>{
 
+        return{ //en este return metemos el id dentro de todos mis campos(colección), acá estamos creando un nuevo array de productos
 
-        return{
-
-          id: produ.id,
-          ...produ.data(),
+          ...produ.data(), //acá accedemos a toda la información de mi colección
+          id: produ.id, //acá agreamos el id (el id esta dentro de prod)
 
 
         };
+
+        
 
 
       });
 
       setProductos(products);
+      console.log(products);
 
 
     })
