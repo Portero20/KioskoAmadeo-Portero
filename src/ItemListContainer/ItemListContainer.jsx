@@ -20,35 +20,44 @@ const ItemListContainer = () => {
 
   useEffect(() => {
 
-    const getProducts = new Promise ((res,rej) => { //si pongo res caera en el then y si pongo rej en el catch
+    const itemCollection = collection(db,"productos");
 
-      setTimeout(() => {
+    const q = query(itemCollection,where("category","==",categoryID));
+    
+    getDocs(q)
 
-        const prodFiltrados = products.filter((prod) => prod.category === categoryID) //utilizamos filter porque es un array de objetos
-        
-        res(categoryID ? prodFiltrados : products) //esta respuesta va a caer en el then, por lo tanto me va a mostrar mi array
-        
-      }, 500);
-  
-  
-    })
-    getProducts
-    .then((response) => { //en los parentesis cae la resolucion de la promesa
-  
-      setProductos(response);  //guardamos en mi estado productos el response que me llega,setProductos actualiza mi estado cuando me llega el response
-      setLoading(false);
-  
-    })  
-    .catch((err) =>{
-  
-      console.error(err);   //salio todo mal
+    .then((resp) => {
+
+      console.log(resp);
       
+      const products = resp.docs.map((produ)=>{
+
+        return{ //en este return metemos el id dentro de todos mis campos(colección), acá estamos creando un nuevo array de productos
+
+          ...produ.data(), //acá accedemos a toda la información de mi colección
+          id: produ.id, //acá agreamos el id (el id esta dentro de prod)
+
+
+        };
+
+        
+
+
+      });
+
+      setProductos(products);
+      console.log(products);
+
+
     })
-    return () =>{
+    .catch((error) =>{
+      console.log(error);
+    })
+    .finally(() =>{
 
-      setLoading(true)
+      setLoading(false);
 
-    }
+    })
 
 
     
@@ -76,44 +85,3 @@ const ItemListContainer = () => {
 export default ItemListContainer;
 
 //las props se pasan en la etiqueta del componente al cual le quiero pasar información y se reciben en el cuerpo de la función
-
-
-
-// const itemCollection = collection(db,"productos");
-
-//     const q = query(itemCollection,where("category","==",categoryID));
-    
-//     getDocs(q)
-
-//     .then((resp) => {
-
-//       console.log(resp);
-      
-//       const products = resp.docs.map((produ)=>{
-
-//         return{ //en este return metemos el id dentro de todos mis campos(colección), acá estamos creando un nuevo array de productos
-
-//           ...produ.data(), //acá accedemos a toda la información de mi colección
-//           id: produ.id, //acá agreamos el id (el id esta dentro de prod)
-
-
-//         };
-
-        
-
-
-//       });
-
-//       setProductos(products);
-//       console.log(products);
-
-
-//     })
-//     .catch((error) =>{
-//       console.log(error);
-//     })
-//     .finally(() =>{
-
-//       setLoading(false);
-
-//     })
