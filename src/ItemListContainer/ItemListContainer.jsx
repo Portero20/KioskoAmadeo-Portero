@@ -21,7 +21,7 @@ const ItemListContainer = () => {
 
     const itemCollection = collection(db,"productos");
 
-    const q = query(itemCollection,where("category","==",`${categoryID}`));
+    const q = query(itemCollection,where("category","==",`${categoryID}`)); //aca lo ponemos entre llaves porque si no me tirara undefined
 
     const filtrado = categoryID ? q : itemCollection;
     
