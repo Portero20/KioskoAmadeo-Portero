@@ -23,8 +23,10 @@ const ItemListContainer = () => {
     const itemCollection = collection(db,"productos");
 
     const q = query(itemCollection,where("category","==",categoryID));
+
+    const filtrado = categoryID ? q : itemCollection;
     
-    getDocs(q)
+    getDocs(filtrado)
 
     .then((resp) => {
 
@@ -46,18 +48,18 @@ const ItemListContainer = () => {
       });
 
       setProductos(products);
-      console.log(products);
+      setLoading(false)
 
 
     })
     .catch((error) =>{
       console.log(error);
     })
-    .finally(() =>{
+    return(
 
-      setLoading(false);
+      setLoading(true)
 
-    })
+    )
 
 
     
