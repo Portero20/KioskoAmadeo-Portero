@@ -133,12 +133,12 @@ const CartProvider = ({children}) => {
     }
 
     //función para el largo del carrito
-    // const totalProductos = () =>{
+    const totalProductos = () =>{
 
-    //   return cart.length;
+      return cart.length;
 
 
-    // }
+    }
 
 
     console.log(cart);
@@ -147,7 +147,7 @@ const CartProvider = ({children}) => {
 
 
   return( //a traves del value paso mi estado y la función que setea mi estado
-    <CartContext.Provider value={{cart,addItem,clearCart,eliminarProd,getProductQuantity,totalPrice,totalQuantity}}> 
+    <CartContext.Provider value={{cart,addItem,clearCart,eliminarProd,getProductQuantity,totalPrice,totalProductos}}> 
 
       {children} 
 

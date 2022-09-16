@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react"; //rafce = React Arrow Functi
 import { useParams } from "react-router-dom";
 import "animate.css";
 import Spinner from 'react-bootstrap/Spinner'
-import { products } from "../components/mock/productos";
 import ItemList from "../components/itemList/ItemList";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../../src/components/firebase/firebaseConfig";
@@ -22,7 +21,7 @@ const ItemListContainer = () => {
 
     const itemCollection = collection(db,"productos");
 
-    const q = query(itemCollection,where("category","==",categoryID));
+    const q = query(itemCollection,where("category","==",`${categoryID}`));
 
     const filtrado = categoryID ? q : itemCollection;
     

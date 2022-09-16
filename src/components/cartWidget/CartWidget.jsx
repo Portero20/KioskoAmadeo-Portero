@@ -5,7 +5,7 @@ import "./cartWidget.scss";
 
 const CartWidget = () => {
 
-  const {totalQuantity,totalProductos} = useContext(CartContext);
+  const {totalProductos} = useContext(CartContext);
 
 
   return (
@@ -13,7 +13,7 @@ const CartWidget = () => {
     <div className="containerCarrito">
 
       <span className="sizeCart"><AiOutlineShoppingCart /></span>
-      <span style={{textDecoration:'none'}} className="colorNumber">{totalQuantity() === 0 ? "" : totalQuantity()}</span>
+      <span style={{textDecoration:'none'}} className="colorNumber">{totalProductos() === 0 ? "" : totalProductos()}</span>
 
     </div>
     
