@@ -53,8 +53,10 @@ const ItemCount = ({stock,onAdd,initial = 1}) => {
     const agregar = () =>{
 
         onAdd(count)
+
     }
     
+    const agregarCarro = () => toast.error("No se pueden agregar 0 productos.");
 
   return (
     <div>
@@ -85,7 +87,12 @@ const ItemCount = ({stock,onAdd,initial = 1}) => {
 
         </div>
         
-        <button className='botonAgregar' onClick={agregar}>Agregar al carrito</button>
+        <button className='botonAgregar' onClick={agregar}>
+
+            Agregar al carrito
+
+            
+        </button>
 
     </div>
   )
