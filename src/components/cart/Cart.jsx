@@ -5,12 +5,31 @@ import { CartContext } from '../context/CartContext'
 import carritoVacio from '../../img/cartVacio.png'
 import CarritoProductos from './CarritoProductos';
 import "./carrito.scss";
+import Formulario from '../form/Formulario';
+import { useState } from 'react';
 
 const Cart = () => {
 
-  const {cart,clearCart,totalPrice} = useContext(CartContext);
-  
+    const [idCompra, setIdCompra] = useState('');
+    const {cart,clearCart,totalPrice} = useContext(CartContext);
+    
 
+    const handleId = (id) => {
+
+      setIdCompra(id);
+
+    };
+
+    if(idCompra){
+
+      return <div className='codReferencia'>
+        <h1>Gracias por tu compra!</h1>
+        <h1>Tu código de referencia es: {idCompra} </h1>
+      </div>
+    
+    }
+
+  
     if(cart.length === 0){
 
       return(
@@ -52,10 +71,13 @@ const Cart = () => {
 
         <div className='containerButton'>
           <button className='clearCart' onClick={clearCart}>🗑️ Vaciar</button>
-          <button className='finalizarButton'>Finalizar Compra</button>
+          <Link to="/form">
+            <button className='finalizarButton'>Finalizar Compra</button>
+          </Link>
           <h4 style={{fontWeight:'bolder'}}>Total: $ {totalPrice()} </h4>
         </div>
 
+        <Formulario cart={cart} total={totalPrice()} clear={clearCart} handleId={handleId} />
         
 
 

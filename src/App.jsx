@@ -5,11 +5,22 @@ import "./scss/index.scss";
 import Main from "./components/main/Main";
 import CartProvider from "./components/context/CartContext";
 
+// import {collection,addDoc} from 'firebase/firestore';
+// import { db } from "../src/components/firebase/firebaseConfig";
+// import { products } from "./components/mock/productos";
+
+
 //podemos hacer un export de una constante, tiene un import diferente
 
 //export const App = () => "Hola mundo"  // los componentes inician con la letra inicial en Mayuscula
 
 //a Main le pasamos una clave-valor, lo que pasamos va a estar en llaves pero un string va en comillas, componente padre le pasa una propiedad a componente hijo
+
+
+// const ref = collection(db,"productos")
+
+// products.map((producto) => addDoc(ref,producto));
+
 
 const App = () => {
 

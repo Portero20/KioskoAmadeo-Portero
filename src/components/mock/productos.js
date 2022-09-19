@@ -1,6 +1,5 @@
 export const products = [
     {
-        id: 1,
         title: "Bon o Bon",
         price: 50,
         stock: 10,
@@ -9,7 +8,6 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1661977915/bon-o-bon-argentino-removebg-preview_qvxvme.png"
     },
     {
-        id: 2,
         title: "Oreo",
         price: 250,
         stock: 2,
@@ -18,7 +16,6 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1661977926/oreo-removebg-preview_xsfvyo.png"
     },
     {
-        id: 3,
         title: "Lenguetazo",
         price: 50,
         stock: 5,
@@ -27,7 +24,6 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1661977923/lenguetazo-removebg-preview_cvwpuh.png",
     },
     {
-        id: 4,
         title: "Aguila Brownie",
         price: 180,
         stock: 6,
@@ -36,7 +32,6 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662010027/alfajor_aguila-removebg-preview_lk40ay.png",
     },
     {
-        id: 5,
         title: "Mogul Ositos",
         price: 80,
         stock: 2,
@@ -45,7 +40,6 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662011670/mogulositos-removebg-preview_gukdu4.png",
     },
     {
-        id: 6,
         title: "Caja Feeling",
         price: 1300,
         stock: 10,
@@ -54,7 +48,6 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662011928/caja_feeling-removebg-preview_lxzhbz.png",
     },
     {
-        id: 7,
         title: "Tita",
         price: 80,
         stock: 4,
@@ -63,7 +56,6 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662012403/tita-removebg-preview_wspflo.png",
     },
     {
-        id: 8,
         title: "Baby Doll",
         price: 100,
         stock: 7,
@@ -72,7 +64,6 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662012639/babydollcupetines-removebg-preview_dbxkrj.png",
     },
     {
-        id: 9,
         title: "Sugus Confitados",
         price: 150,
         stock: 6,
@@ -81,7 +72,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662012857/sugusconfitados-removebg-preview_ukjor1.png",
     },
     {
-        id: 10,
+
         title: "Pico Dulce",
         price: 1200,
         stock: 2,
@@ -90,7 +81,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662014448/picodulce-removebg-preview_czhazf.png",
     },
     {
-        id: 11,
+
         title: "Paso de los Toros",
         price: 150,
         stock: 1,
@@ -99,7 +90,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1661983996/pasodelostoros-removebg-preview_r5vwev.png",
     },
     {
-        id: 12,
+
         title: "Gatorade",
         price: 250,
         stock: 3,
@@ -108,7 +99,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1661961522/gatoradablue-removebg-preview_xzqt80.png",
     },
     {
-        id: 13,
+
         title: "Coca Cola",
         price: 200,
         stock: 6,
@@ -135,7 +126,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662002770/sixpackbudweiser_asubiz.png",
     },
     {
-        id: 16,
+
         title: "Rockstar",
         price: 180,
         stock: 8,
@@ -144,7 +135,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662001854/rockstarbebida-removebg-preview_wxespg.png",
     },
     {
-        id: 17,
+
         title: "Baggio Multifruta",
         price: 80,
         stock: 5,
@@ -153,7 +144,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662002186/baggiomultifruta-removebg-preview_ih4hpp.png",
     },
     {
-        id: 18,
+
         title: "Agua Benedictino",
         price: 120,
         stock: 7,
@@ -162,7 +153,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662003034/aguabenedictino-removebg-preview_bmb2ac.png",
     },
     {
-        id: 19,
+
         title: "Levite Pomelo",
         price: 300,
         stock: 10,
@@ -171,7 +162,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662003424/levitepomelo-removebg-preview_kyrhd1.png",
     },
     {
-        id: 20,
+
         title: "Sprite",
         price: 200,
         stock: 6,
@@ -180,7 +171,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662006136/spritegaseosa_iyakvu.png",
     },
     {
-        id: 21,
+
         title: "Arroz Gallo",
         price: 200,
         stock: 3,
@@ -189,7 +180,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1661982015/arrozgallo-removebg-preview_k6ufem.png",
     },
     {
-        id: 22,
+
         title: "Cafe La Morenita",
         price: 350,
         stock: 3,
@@ -198,7 +189,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1661982011/cafelamorenita-removebg-preview_bzy0ce.png",
     },
     {
-        id: 23,
+
         title: "Café La Virginia",
         price: 650,
         stock: 10,
@@ -207,7 +198,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1661982082/cafelavirginia-removebg-preview_ibex96.png",
     },
     {
-        id: 24,
+
         title: "Dulce de leche",
         price: 450,
         stock: 6,
@@ -216,7 +207,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662014758/dulcedeleche-removebg-preview_js9kx5.png",
     },
     {
-        id: 25,
+
         title: "Caldo Knorr",
         price: 300,
         stock: 7,
@@ -225,7 +216,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662015364/caldosaborgallina-removebg-preview_rhiii0.png",
     },
     {
-        id: 26,
+
         title: "Queso rallado",
         price: 250,
         stock: 5,
@@ -234,7 +225,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662015716/quesorallado-removebg-preview_zvc03c.png",
     },
     {
-        id: 27,
+
         title: "Salsa Pomarola",
         price: 200,
         stock: 7,
@@ -243,7 +234,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662015954/salsapomarola-removebg-preview_llfp1d.png",
     },
     {
-        id: 28,
+
         title: "Yerba Amanda",
         price: 450,
         stock: 5,
@@ -252,7 +243,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662016136/yerbaamanda-removebg-preview_e3sbzo.png",
     },
     {
-        id: 29,
+
         title: "Azúcar Ledesma",
         price: 300,
         stock: 5,
@@ -261,7 +252,7 @@ export const products = [
         img: "https://res.cloudinary.com/ddjox2gat/image/upload/v1662016307/azucarledesma-removebg-preview_y251xf.png",
     },
     {
-        id: 30,
+
         title: "Pan Lactal",
         price: 400,
         stock: 2,
