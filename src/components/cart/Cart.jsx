@@ -7,6 +7,7 @@ import CarritoProductos from './CarritoProductos';
 import "./carrito.scss";
 import Formulario from '../form/Formulario';
 import { useState } from 'react';
+import gracias from "../../img/Gracias_por_su_compra.png"
 
 const Cart = () => {
 
@@ -23,7 +24,7 @@ const Cart = () => {
     if(idCompra){
 
       return <div className='codReferencia'>
-        <h1>Gracias por tu compra!</h1>
+        <img src={gracias} alt="" />
         <h1>Tu código de referencia es: {idCompra} </h1>
       </div>
     
