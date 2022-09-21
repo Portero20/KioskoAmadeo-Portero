@@ -27,8 +27,6 @@ const ItemListContainer = () => {
     getDocs(filtrado)
 
     .then((resp) => {
-
-      console.log(resp);
       
       const products = resp.docs.map((produ)=>{
 
@@ -60,8 +58,6 @@ const ItemListContainer = () => {
     )
 
 
-    
-
   },[categoryID]) 
 
   
@@ -84,4 +80,4 @@ const ItemListContainer = () => {
 
 export default ItemListContainer;
 
-//las props se pasan en la etiqueta del componente al cual le quiero pasar información y se reciben en el cuerpo de la función
+

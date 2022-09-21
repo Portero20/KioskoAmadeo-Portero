@@ -12,14 +12,10 @@ const CartProvider = ({children}) => {
 
       if (isInCart(item.id)) { 
 
-        
-
         sumarCantidad(item,qty) 
         
       } else { 
         
-        
-
         setCart([...cart,{...item,qty}]); 
         
       }
@@ -46,10 +42,6 @@ const CartProvider = ({children}) => {
    
 
     const eliminarProd = (id) =>{
-
-      console.log(`eliminamos un producto ${id}`);
-
-      
 
       const carritoFiltrado = cart.filter((prod) => prod.id !== id); 
 
@@ -115,22 +107,6 @@ const CartProvider = ({children}) => {
 
     }
 
-    
-
-    const totalQuantity = () =>{
-
-      let acumulador = 0;
-
-      cart.forEach((prod) => { 
-
-        acumulador += prod.qty;  
-
-      })
-
-      return acumulador; 
-
-    }
-
    
     const totalProductos = () =>{
 
@@ -138,11 +114,6 @@ const CartProvider = ({children}) => {
 
 
     }
-
-
-    console.log(cart);
-
-
 
 
     return( 

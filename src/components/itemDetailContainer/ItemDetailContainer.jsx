@@ -29,9 +29,6 @@ const ItemDetailContainer = () => {
       
     })
 
-    console.log(res);
-
-
 
    })
    .catch((error) =>{
