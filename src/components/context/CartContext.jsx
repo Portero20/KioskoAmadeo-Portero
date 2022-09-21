@@ -2,48 +2,48 @@ import React from 'react'
 import { useState } from 'react';
 import { createContext } from 'react'
 
-export const CartContext = createContext(); //creamos el contexto 
+export const CartContext = createContext();  
 
 const CartProvider = ({children}) => {
 
-    const [cart,setCart] = useState([]) //un array vacio porque todavia no agregue nada
+    const [cart,setCart] = useState([]) 
 
-    const addItem = (item,qty) =>{ //creamos una funcion para setear mi carrito
+    const addItem = (item,qty) =>{ 
 
-      if (isInCart(item.id)) { //para acceder al id tenemos que poner la función y pasarle el id
+      if (isInCart(item.id)) { 
 
-        //lo encuentro y le sumo la cantidad
+        
 
-        sumarCantidad(item,qty) //le pasamos item y qty para comparar
+        sumarCantidad(item,qty) 
         
       } else { 
         
-        //si no lo encuentra, lo setea en el carrito
+        
 
-        setCart([...cart,{...item,qty}]); //de esta manera adjuntamos cantidad dentro del objeto item, le pasamos cart tmb para que no se pise y me lo agregue
+        setCart([...cart,{...item,qty}]); 
         
       }
 
     }
 
  
-    //función para vaciar el carrito
+    
     const clearCart = () => {
 
-      setCart([]); //para vaciar el carrito tenemos que volver al estado inicial, ponemos nuestro estado con un array vacío
+      setCart([]); 
 
     }
 
 
-    //función para corroborar si esta o no en el carrito
+    
 
-    const isInCart = (id) =>{ //el id me viene del hijo isInCart
+    const isInCart = (id) =>{ 
 
-      return cart.some((prod) => prod.id === id) //por cada iteracción voy a preguntar si producto.id es igual a algún id
+      return cart.some((prod) => prod.id === id) 
 
     }
 
-    //función para eliminar un solo producto pasandole el id con filter
+   
 
     const eliminarProd = (id) =>{
 
@@ -58,9 +58,9 @@ const CartProvider = ({children}) => {
     }
 
 
-    //función para sumar cantidades del mismo producto
+    
 
-    const sumarCantidad = (item,qty) =>{ //me llega como argumento item y cantidad
+    const sumarCantidad = (item,qty) =>{ 
 
       const carritoActualizado = cart.map((prod) =>{ //por cada iteracción recorremos cada producto que tenga en el carrito, map retorna un nuevo array
 
@@ -89,9 +89,9 @@ const CartProvider = ({children}) => {
 
     }
 
-    //función para saber cuantas unidades tengo en mi carrito
+    
 
-    const getProductQuantity = (id) =>{ //le pasamos el id porque es lo que queremos comparar
+    const getProductQuantity = (id) =>{ 
 
       const product = cart.find((prod) => prod.id === id) //recorremos mi carrito y va a preguntar si ese producto ya esta en el carrito
 
@@ -99,7 +99,7 @@ const CartProvider = ({children}) => {
 
     }
 
-    //función para el total precio del carrito
+    
 
     const totalPrice = () =>{
 
@@ -116,23 +116,23 @@ const CartProvider = ({children}) => {
 
     }
 
-    //función calcular total de unidades para el cart widget 
+    
 
     const totalQuantity = () =>{
 
       let acumulador = 0;
 
-      cart.forEach((prod) => { //iteramos el carrito
+      cart.forEach((prod) => { 
 
-        acumulador += prod.qty; //sumamos las unidades 
+        acumulador += prod.qty;  
 
       })
 
-      return acumulador; //por cada vuelta retorno mi acumulador
+      return acumulador; 
 
     }
 
-    //función para que en el carrito me marque los productos que voy agregando
+   
     const totalProductos = () =>{
 
       return cart.length;
@@ -146,7 +146,7 @@ const CartProvider = ({children}) => {
 
 
 
-    return( //a traves del value paso mi estado y la función que setea mi estado
+    return( 
     <CartContext.Provider value={{cart,addItem,clearCart,eliminarProd,getProductQuantity,totalPrice,totalProductos}}> 
 
       {children} 

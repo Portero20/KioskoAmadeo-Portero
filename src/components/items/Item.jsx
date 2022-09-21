@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'; //importamos para darle un link al boton "ver detalle"
+import {Link} from 'react-router-dom'; 
 import "../items/items.scss"
 
 const Item = ({item}) => {

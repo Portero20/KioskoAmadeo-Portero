@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"; //rafce = React Arrow Function Export Component
+import React, { useEffect, useState } from "react"; 
 import { useParams } from "react-router-dom";
 import "animate.css";
 import Spinner from 'react-bootstrap/Spinner'
@@ -6,22 +6,21 @@ import ItemList from "../components/itemList/ItemList";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../../src/components/firebase/firebaseConfig";
 
-//con react las clases las ponemos con: className y funciona igual que una class
+
 
 const ItemListContainer = () => { 
 
-  const {categoryID} = useParams();  //desestructuramos y esto me devuelve bebidas, golosinas y varios
+  const {categoryID} = useParams();  
 
-  //Practica, el 99% de los casos las promesas no las estaremos haciendo a mano porque eso depende de la API si esta bien o mal
-
-  const [productos,setProductos] = useState([]) //le ponemos corchetes porque nos va a llegar un array
+  
+  const [productos,setProductos] = useState([]) 
   const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
 
     const itemCollection = collection(db,"productos");
 
-    const q = query(itemCollection,where("category","==",`${categoryID}`)); //aca lo ponemos entre llaves porque si no me tirara undefined
+    const q = query(itemCollection,where("category","==",`${categoryID}`)); 
 
     const filtrado = categoryID ? q : itemCollection;
     
@@ -33,10 +32,10 @@ const ItemListContainer = () => {
       
       const products = resp.docs.map((produ)=>{
 
-        return{ //en este return metemos el id dentro de todos mis campos(colección), acá estamos creando un nuevo array de productos
+        return{ 
 
-          ...produ.data(), //acá accedemos a toda la información de mi colección
-          id: produ.id, //acá agreamos el id (el id esta dentro de prod)
+          ...produ.data(), 
+          id: produ.id, 
 
 
         };
@@ -63,7 +62,7 @@ const ItemListContainer = () => {
 
     
 
-  },[categoryID]) //le pasamos el array de dependencias categoryName, cuando cambie la URL se va a volver a ejecutar
+  },[categoryID]) 
 
   
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import estilosM from "./main.module.scss"; //trabajamos con modulos, le pone un id a la clase automaticamente, con modulos evitamos que se pise
+import estilosM from "./main.module.scss"; 
 import { Route, Routes } from 'react-router-dom';
 import ItemListContainer from '../../ItemListContainer/ItemListContainer';
 import Home from './Home';

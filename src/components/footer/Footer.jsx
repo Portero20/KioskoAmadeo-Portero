@@ -1,5 +1,5 @@
 import React from 'react'
-import estilos from "./footer.module.scss"; //trabajamos con modulos, le pone un id a la clase automaticamente, con modulos evitamos que se pise
+import estilos from "./footer.module.scss"; 
 import './iconos.scss'
 
 
@@ -13,7 +13,7 @@ const styles = {
 };
 
 const Footer = () => {
-  //podemos agregar estilos en linea pero hay que utilizar camelCase
+  
 
   return (
     <footer className={estilos.contenedorFooter}>

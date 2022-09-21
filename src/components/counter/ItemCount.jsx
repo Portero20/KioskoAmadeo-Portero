@@ -5,27 +5,27 @@ import "../counter/count.scss"
 
 const ItemCount = ({stock,onAdd,initial = 1}) => {
 
-    const [count,setCount] = useState(initial) //lee mi estado y ve que el valor inicial es 1
+    const [count,setCount] = useState(initial) 
 
     
-    useEffect(() =>{ //utilizamos un useEffect
+    useEffect(() =>{ 
 
-        setCount(initial) //setea el contador con el num inicial
+        setCount(initial) 
 
-    },[initial]); //escucha si cambia el numero inicial
+    },[initial]); 
 
 
     const sumar = () =>{
 
-        if(count < stock) {   //si count es menor al tope le sumaremos 1, cuando llegue al tope del stock ya no me va a dejar sumar
+        if(count < stock) {   
             
-            setCount(count+1)  //lo suma
+            setCount(count+1)  
 
         } else {
             
             toast('Máximo de stock', {
                 icon: '❗',
-              }); //si no saltara este mensaje
+              }); 
 
         }
 
@@ -37,9 +37,9 @@ const ItemCount = ({stock,onAdd,initial = 1}) => {
     const restar = () => {
 
 
-        if(count > 1) {  // si count es mayor le resta 1
+        if(count > 1) {  
             
-            setCount(count-1) //lo resta
+            setCount(count-1) 
 
         } else {
 
@@ -75,7 +75,7 @@ const ItemCount = ({stock,onAdd,initial = 1}) => {
                 containerClassName=""
                 containerStyle={{}}
                 toastOptions={{
-                    // Define default options
+                    
                     duration: 2000,
                     style: {
                      background: '#363636',

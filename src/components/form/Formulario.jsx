@@ -17,9 +17,9 @@ const Formulario = ({cart,total,clear,handleId}) => {
 
   const handleSubmit = (event) => {
 
-    event.preventDefault();  //para prevenir el evento del submit (para que no se recargue)
+    event.preventDefault();  
 
-    const order = { //es un objeto que contiene (buyer,items,total y date)
+    const order = { 
 
       buyer: {nombre: nombre, apellido: apellido, email: email, telefono: telefono},
       items: cart,
@@ -29,13 +29,13 @@ const Formulario = ({cart,total,clear,handleId}) => {
 
     };
 
-    const ordersCollection = collection(db,'orders'); //llamamos a la base de datos y creamos "orders"
+    const ordersCollection = collection(db,'orders'); 
 
-    addDoc(ordersCollection, order) //metodo para agregar un documento (referencia de la colección y el objeto que vamos a insertar en orders)
+    addDoc(ordersCollection, order) 
     .then((res) => {
 
-      handleId(res.id);  //código de compra
-      clear(); //para vaciar el carrito una vez enviemos los datos
+      handleId(res.id);  
+      clear();
 
     });
 

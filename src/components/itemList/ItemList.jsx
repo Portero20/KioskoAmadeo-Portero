@@ -11,9 +11,9 @@ const ItemList = ({estado}) => {
           <h2 style={{fontWeight:'bolder'}}>Productos</h2>
           {
 
-            estado.map((produ) => { //recibe un callback (el resultado de cada iteraccion voy a recorrer un producto)
+            estado.map((produ) => { 
 
-              return( //retornamos cada uno de los productos
+              return( 
               
                 <Item item={produ} key={produ.id}/>
 

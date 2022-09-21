@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from "../nav/Navbar"; //no se le pone .jsx porque webpack ya reconoce que estamos trabajando con jxs
-import estiloH from "./header.module.scss"; //trabajamos con modulos, le pone un id a la clase automaticamente, con modulos evitamos que se pise
+import Navbar from "../nav/Navbar"; 
+import estiloH from "./header.module.scss"; 
 
 const Header = () => {
   return (

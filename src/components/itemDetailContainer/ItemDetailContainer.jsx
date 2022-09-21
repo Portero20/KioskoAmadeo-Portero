@@ -9,7 +9,7 @@ const ItemDetailContainer = () => {
 
   const {itemID} = useParams()
   const [product,setProduct] = useState({})
-  const [isLoading, setLoading] = useState(true) //para el loading y lo inicializamos con un valor booleano
+  const [isLoading, setLoading] = useState(true) 
 
 
   useEffect(() => {
