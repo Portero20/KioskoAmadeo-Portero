@@ -22,10 +22,10 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav d-flex justify-content-end w-100 navigator">
-            <Link to="/tienda" className="nav-link active text-light fw-bold link">Tienda</Link>
-            <Link to="/category/Bebidas" className="nav-link active text-light fw-bold link">Bebidas</Link>
-            <Link to="/category/Golosinas" className="nav-link active text-light fw-bold link">Golosinas</Link>
-            <Link to="/category/Varios" className="nav-link active text-light fw-bold link">Varios</Link>
+            <Link to="/tienda" className="nav-link text-light fw-bold link">Tienda</Link>
+            <Link to="/category/Bebidas" className="nav-link text-light fw-bold link">Bebidas</Link>
+            <Link to="/category/Golosinas" className="nav-link text-light fw-bold link">Golosinas</Link>
+            <Link to="/category/Varios" className="nav-link text-light fw-bold link">Varios</Link>
             
           </div>
 
