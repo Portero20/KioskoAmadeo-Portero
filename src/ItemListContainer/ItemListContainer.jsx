@@ -31,7 +31,7 @@ const ItemListContainer = () => {
       const products = resp.docs.map((produ)=>{
 
         return{ 
-
+          
           ...produ.data(), 
           id: produ.id, 
 
@@ -80,4 +80,4 @@ const ItemListContainer = () => {
 
 export default ItemListContainer;
 
-
+//las props se pasan en la etiqueta del componente al cual le quiero pasar información y se reciben en el cuerpo de la función
