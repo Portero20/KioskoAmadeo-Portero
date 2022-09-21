@@ -49,12 +49,11 @@ const CartProvider = ({children}) => {
 
       console.log(`eliminamos un producto ${id}`);
 
-      //utilizamos el filter para eliminar 
+      
 
-      const carritoFiltrado = cart.filter((prod) => prod.id !== id); //filtramos todos los productos y me elimina los productos que sean distintos de ese id
+      const carritoFiltrado = cart.filter((prod) => prod.id !== id); 
 
-      setCart(carritoFiltrado); //Actualizamos el estado
-
+      setCart(carritoFiltrado); 
     }
 
 
@@ -62,29 +61,29 @@ const CartProvider = ({children}) => {
 
     const sumarCantidad = (item,qty) =>{ 
 
-      const carritoActualizado = cart.map((prod) =>{ //por cada iteracción recorremos cada producto que tenga en el carrito, map retorna un nuevo array
+      const carritoActualizado = cart.map((prod) =>{ 
 
-        //hacemos una validación 
-        if (prod.id === item.id) { //preguntamos que producto tenemos que actualizar, si el prod.id que estoy iterando es igual al id del producto que estoy agregando al carrito
+         
+        if (prod.id === item.id) { 
 
-          const productoActualizado = {  //esto va a ser un objeto
+          const productoActualizado = {  
 
-            ...prod,  //spread para que se quede con todo lo que ya tenia en el objeto pero la cantidad la vamos a sobreescribir
-            qty: qty, //pisamos la cantidad para nunca tener más del stock
+            ...prod, 
+            qty: qty, 
 
           }
 
-          return productoActualizado; //retornamos para que me lo muestre
+          return productoActualizado; 
           
-        } else { //si no se cumple, el map siempre debe retornar algo
+        } else { 
 
-          return prod; //retornamos la iteracción (mi prod no actualizado), si no pongo este return no va a retornar nada
+          return prod; 
           
         }
 
       }); 
 
-      setCart(carritoActualizado)  //seteamos mi carrito actualizado porque nos llega un nuevo array
+      setCart(carritoActualizado)  
 
 
     }
@@ -93,9 +92,9 @@ const CartProvider = ({children}) => {
 
     const getProductQuantity = (id) =>{ 
 
-      const product = cart.find((prod) => prod.id === id) //recorremos mi carrito y va a preguntar si ese producto ya esta en el carrito
+      const product = cart.find((prod) => prod.id === id) 
 
-      return product?.qty; //retornamos la cantidad del producto que esta en el carrito (porque solo nos interesa eso)
+      return product?.qty; 
 
     }
 
@@ -103,15 +102,15 @@ const CartProvider = ({children}) => {
 
     const totalPrice = () =>{
 
-      let acumulador = 0; //creamos un acumulador
+      let acumulador = 0; 
 
-      cart.forEach((prod) => { //iteramos el carrito
+      cart.forEach((prod) => { 
 
-        acumulador += prod.price * prod.qty  //multiplicamos el precio por la cantidad
+        acumulador += prod.price * prod.qty 
 
       })
 
-      return acumulador; //por cada vuelta retorno mi acumulador
+      return acumulador; 
 
 
     }
