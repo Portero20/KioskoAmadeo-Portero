@@ -20,7 +20,9 @@ Kiosko amadeo es un drugstore situado en la provincia de San Fernando del Valle 
 
 Clonamos el repositorio
 
-```git clone https://github.com/Portero20/KioskoAmadeo-Portero.git```
+```
+git clone https://github.com/Portero20/KioskoAmadeo-Portero.git
+```
 
 Instalamos todas las dependencias
 
