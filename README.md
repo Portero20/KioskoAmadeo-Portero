@@ -45,6 +45,7 @@ npm start
 
 ## Deploy 🌐
 
+![](https://skillicons.dev/icons?i=vercel)
 
 ## Contacto 👋
 
