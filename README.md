@@ -30,15 +30,24 @@ git clone https://github.com/Portero20/KioskoAmadeo-Portero.git
 
 Instalamos todas las dependencias
 
-`npm install`
+```
+npm install
+```
 
 Nos posicionamos en la carpeta
 
-`cd kiosko-portero`
+```
+cd kiosko-portero
+```
 
 Iniciamos la app
 
-`npm start`
+```
+npm start
+```
+
+## Deploy 🌐
+
 
 ## Contacto 👋
 
