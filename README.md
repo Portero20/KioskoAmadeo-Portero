@@ -1,6 +1,6 @@
 # Bienvenidos a Kiosko Amadeo 
 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](../kiosko-portero/src/img/readmeGif.gif)
 
 
 ## ¿De que se trata mi proyecto? 🚀
@@ -9,7 +9,7 @@ Kiosko amadeo es un drugstore situado en la provincia de San Fernando del Valle 
 
 ## Tecnologias Utilizadas ⚙️
 
-
+![My Skills](https://skillicons.dev/icons?i=html,css,sass,react,bootstrap,git)
 
 ## Librerias utilizadas 📋
 
