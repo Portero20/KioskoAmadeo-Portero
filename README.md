@@ -1,6 +1,7 @@
 # Bienvenidos a Kiosko Amadeo 
 
-![](/img/readmeGif.gif)
+<p> <img src="img/../src/img/readmeGif.gif"/> </p>
+
 ## ¿De que se trata mi proyecto? 🚀
 
 Kiosko amadeo es un drugstore situado en la provincia de San Fernando del Valle de Catamarca, mi idea principal fue hacer un ecommerce para poder efectuar la compra de productos.
