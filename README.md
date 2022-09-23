@@ -1,4 +1,4 @@
-<h1 align="center">Bienvenidos a Kiosko Amadeo<h1>
+# Bienvenidos a Kiosko Amadeo 🍬
 
 <p> <img src="img/../src/img/readmeGif.gif" width="500" height="240" /> </p>
 
