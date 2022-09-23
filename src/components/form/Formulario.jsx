@@ -43,25 +43,25 @@ const Formulario = ({cart,total,clear,handleId}) => {
 
   const handleChangeNombre = (event) => {
 
-    setNombre(event.target.value); //si queremos acceder al nombre y accedemos a su valor, seteamos su valor
+    setNombre(event.target.value); 
 
   }
 
   const handleChangeApellido = (event) => {
 
-    setApellido(event.target.value); //si queremos acceder al apellido y accedemos a su valor, seteamos su valor
+    setApellido(event.target.value); 
 
   }
 
   const handleChangeEmail = (event) => {
 
-    setEmail(event.target.value); //si queremos acceder al apellido y accedemos a su valor, seteamos su valor
+    setEmail(event.target.value); 
 
   }
 
   const handleChangeTelefono = (event) => {
 
-    setTelefono(event.target.value); //si queremos acceder al apellido y accedemos a su valor, seteamos su valor
+    setTelefono(event.target.value); 
 
   }
 
