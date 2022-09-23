@@ -1,6 +1,6 @@
-# Bienvenidos a Kiosko Amadeo 
+<h1 align="center">Bienvenidos a Kiosko Amadeo<h1>
 
-<p> <img src="img/../src/img/readmeGif.gif"/> </p>
+<p> <img src="img/../src/img/readmeGif.gif" width="500" height="240" /> </p>
 
 ## ¿De que se trata mi proyecto? 🚀
 
