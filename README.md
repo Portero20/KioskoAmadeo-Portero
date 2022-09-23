@@ -12,11 +12,14 @@ Kiosko amadeo es un drugstore situado en la provincia de San Fernando del Valle 
 ## Librerias utilizadas 📋
 
 - [Animate CSS](https://animate.style/)
-- [Firebase](https://firebase.google.com/?hl=es)
 - [React bootstrap](https://react-bootstrap.github.io/)
 - [React-hot-toast](https://react-hot-toast.com/)
 - [React-icons](https://react-icons.github.io/react-icons/)
 - [React-router-dom](https://reactrouter.com/en/main)
+
+## Base de datos 👩‍💻
+
+- [Firebase](https://firebase.google.com/?hl=es)
 
 ## Pasos para iniciar el proyecto 🛠️
 
