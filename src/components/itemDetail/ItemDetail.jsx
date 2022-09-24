@@ -28,7 +28,7 @@ const ItemDetail = ({product}) => {
   return (
     <div className='estilosBoton'>
 
-      <div className="wrapper">
+      <div className="wrapper animate__animated animate__fadeInLeft">
         <div className="product-img">
           <img src={product.img} className="imgProducto"></img>
         </div>
