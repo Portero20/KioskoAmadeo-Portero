@@ -56,7 +56,6 @@ const ItemCount = ({stock,onAdd,initial = 1}) => {
 
     }
     
-    const agregarCarro = () => toast.error("No se pueden agregar 0 productos.");
 
   return (
     <div>
