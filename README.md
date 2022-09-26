@@ -56,4 +56,5 @@ npm start
 ## Contacto 👋
 
 - Linkedin: [Exequiel Portero](https://www.linkedin.com/in/exequiel-portero/)
+- Email: eportero421@gmail.com
 
