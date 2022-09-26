@@ -35,6 +35,11 @@ const Cart = () => {
       return <div className='codReferencia'>
         <img src={gracias} alt="" />
         <h1>Tu código de referencia es: {idCompra} </h1>
+        <Link to="/tienda" className='linkDesea'>
+        
+          ¿Desea seguir comprando?
+
+        </Link>
       </div>
     
     }
