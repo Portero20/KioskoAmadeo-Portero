@@ -12,7 +12,10 @@ import gracias from "../../img/Gracias_por_su_compra.png"
 const Cart = () => {
 
     const [idCompra, setIdCompra] = useState('');
+    const [form,setForm] = useState(false);
     const {cart,clearCart,totalPrice} = useContext(CartContext);
+
+    const total = totalPrice();
     
 
     const handleId = (id) => {
@@ -21,6 +24,12 @@ const Cart = () => {
 
     };
 
+    const handleClick = () =>{
+
+      setForm(true)
+
+    }
+
     if(idCompra){
 
       return <div className='codReferencia'>
@@ -28,6 +37,14 @@ const Cart = () => {
         <h1>Tu código de referencia es: {idCompra} </h1>
       </div>
     
+    }
+
+    if(form){
+
+      return(
+        <Formulario cart={cart} total={total} clear={clearCart} handleId={handleId} />
+      )
+
     }
 
   
@@ -72,10 +89,11 @@ const Cart = () => {
 
         <div className='containerButton'>
           <button className='clearCart' onClick={clearCart}>🗑️ Vaciar</button>
+          <button className='botonCheckout' onClick={handleClick}>Checkout</button>
           <h4 style={{fontWeight:'bolder'}}>Total: $ {totalPrice()} </h4>
         </div>
 
-        <Formulario cart={cart} total={totalPrice()} clear={clearCart} handleId={handleId} />
+        
         
 
 
