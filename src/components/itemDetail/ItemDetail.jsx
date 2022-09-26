@@ -1,4 +1,5 @@
 import React from 'react'
+import toast, { Toaster } from 'react-hot-toast';
 import { useContext } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
@@ -14,10 +15,13 @@ const ItemDetail = ({product}) => {
   const {addItem,getProductQuantity} = useContext(CartContext);
 
 
+  const notify = () => toast.success('Se agrego al carrito');
+
   const onAdd = (cantidadItem) =>{
 
     setCantidad(cantidadItem); 
     addItem(product,cantidadItem); 
+    notify()
     
 
   }
@@ -43,6 +47,19 @@ const ItemDetail = ({product}) => {
             {
               cantidad === 0 ? <ItemCount stock={product.stock} initial={quantity} onAdd={onAdd} /> : <Link to="/cart" className='verCarrito'>Ver carrito</Link>
             }
+
+            <Toaster 
+              position='bottom-right'
+              toastOptions={{
+
+                duration:2000,
+                style: {
+
+                  fontWeight:'bolder'
+
+                },
+              }}
+            />
 
           </div>
         </div>

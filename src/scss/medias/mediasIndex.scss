@@ -93,5 +93,26 @@
 }
 
 
+@media(max-width:688px){
 
+    .containerMedias{
 
+        .containerFlex{
+
+            .containerCompras{
+    
+                width: 16rem;
+    
+                .flexUbicar{
+                    display: flex;
+                    flex-direction: column;
+    
+    
+                }
+            }
+    
+        }
+
+    }
+
+}

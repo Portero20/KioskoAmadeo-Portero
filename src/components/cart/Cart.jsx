@@ -88,9 +88,11 @@ const Cart = () => {
         }
 
         <div className='containerButton'>
+          <div className="contenedorBotones">
           <button className='clearCart' onClick={clearCart}>🗑️ Vaciar</button>
           <button className='botonCheckout' onClick={handleClick}>Checkout</button>
-          <h4 style={{fontWeight:'bolder'}}>Total: $ {totalPrice()} </h4>
+          <h4 className='totalPrice' style={{fontWeight:'bolder'}}>Total: $ {totalPrice()} </h4>
+          </div>
         </div>
 
         

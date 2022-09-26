@@ -74,12 +74,7 @@ const ItemCount = ({stock,onAdd,initial = 1}) => {
                 containerClassName=""
                 containerStyle={{}}
                 toastOptions={{
-                    
                     duration: 2000,
-                    style: {
-                     background: '#363636',
-                     color: '#fff',
-                    },
 
                 }}
             />

@@ -12,7 +12,8 @@ const CarritoProductos = ({product}) => {
   return (
     <div key={product.id}>
 
-        <div className='containerFlex'>
+        <div className="containerMedias">
+            <div className='containerFlex'>
 
             <div className='containerCompras'>
 
@@ -34,6 +35,7 @@ const CarritoProductos = ({product}) => {
 
 
 
+        </div>
         </div>
 
     </div>
