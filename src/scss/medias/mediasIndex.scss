@@ -116,3 +116,73 @@
     }
 
 }
+
+@media(max-width:600px){
+
+    .codReferencia{
+
+        .graciasCompra{
+
+            height: 350px;
+
+        }
+
+        .codigo__Compra{
+            width: 40rem;
+        }
+
+    }
+
+}
+
+@media(min-width:400px) and (max-width:600px){
+
+    .codReferencia{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .graciasCompra{
+
+            height: 300px;
+
+        }
+
+        .codigo__Compra{
+
+            font-size: 25px;
+            width: 400px;
+        }
+
+    }
+
+
+}
+
+@media(min-width:280px) and (max-width:396px){
+
+    .codReferencia{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .graciasCompra{
+
+            height: 300px;
+
+        }
+
+        .codigo__Compra{
+
+            font-size: 25px;
+            width: 400px;
+        }
+
+    }
+
+
+}
