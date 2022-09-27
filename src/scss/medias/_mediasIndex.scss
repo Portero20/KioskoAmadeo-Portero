@@ -1,4 +1,4 @@
-//Medias queries que utilice para mi e-commerce
+//Medias para las cards de mis productos
 
 @media (max-width:718px) {
 
@@ -13,6 +13,7 @@
 
 }
 
+//Medias para las cards de mis clientes
 @media (max-width:1005px) {
 
     .tarjetasContainer {
@@ -26,6 +27,7 @@
 
 }
 
+//Medias queries para los iconos de las redes sociales de mi footer
 @media (min-width:280px) and (max-width:320px) {
 
     .enla {
@@ -53,6 +55,7 @@
 
 }
 
+//Medias para mi cartWidget
 @media (min-width:280px) and (max-width:991px) {
 
     .containerCarrito {
@@ -70,6 +73,7 @@
 
 }
 
+//Medias para los detalles de mis productos
 @media (max-width:1104px){
 
     .wrapper{
@@ -92,6 +96,7 @@
 
 }
 
+//Medias para "cart" cuando finalizamos la compra
 
 @media(max-width:688px){
 
